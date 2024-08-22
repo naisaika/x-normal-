@@ -1,0 +1,2012 @@
+@import url(sanitize.css);
+/* font-family: 'Rubik', sans-serif; */
+
+body {
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #F1F1F3;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.body-fixed{
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
+    color:#333;
+	height: 100%;
+	left: 0;
+    overflow: hidden;
+} 
+
+/* トップヘッダー */
+
+.header {
+    position: relative;
+}
+
+.header-top {
+    background-color: #fff;
+}
+
+.header-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title {
+    color: #11296C;
+    font-size: 10px;
+    margin: 5% 0 0 0;
+}
+
+.title-logo {
+    width: 50%;
+    height: auto;
+}
+
+.header1-icon {
+    display: flex;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.header1-icon2{
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+.header-text {
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+/* スライドメニュー */
+
+.slide-menu {
+    max-width: 375px;
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    right: -100%;
+    overflow-y: scroll;
+    transition: all.8s;
+    z-index: 5;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.slide-menu::-webkit-scrollbar {
+    display:none;
+}
+
+.slide-menu-click {
+    right: -1%;
+}
+
+.slideout-menu {
+    right: -100%;
+    transition: all 2s;
+  }
+
+.close-container {
+    background-color: #DBDFE9;
+    padding: 16px 0 16px 16px;
+}
+
+.close-button {
+    display: flex;
+    align-items: center;
+    background-color: #11296C;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 0 rgb(7, 23, 70);
+    color: #fff;
+    font-weight: 500;
+    padding: 3px 8px 2px 12px;
+    cursor: pointer;
+}
+
+.close-navi {
+    font-weight: 600;
+    font-size: 10px;
+    margin-right: 4px;
+}
+
+.menu-container {
+    background-color: #fff;
+}
+
+.menu-list {
+    padding: 0;
+    margin-top: 0;
+}
+
+.menu-list-contents {
+    list-style: none;
+    background-color: #fff;
+    color: #11296C;
+    font-weight: 600;
+    font-size: 14px;
+    border: solid 1px #D6D7DC;
+    padding: 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-list-contents:hover {
+    background-color: #F1F1F3;
+}
+
+.right-navi {
+    position: absolute;
+    right: 0;
+    padding-right: 16px;
+}
+
+/* 無料会員登録バナー */
+
+.resister-section {
+    position: relative;
+    margin-top: 48px;
+}
+
+.register-container {
+    background: linear-gradient(90deg, #0C1438,#11296C);
+    color: #fff; 
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 8px;
+}
+
+.mini-logo {
+    position: absolute;
+    top: -5%;
+    left: 47%;
+}
+
+.register-title {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.register-list {
+    list-style: none;
+    font-size: 14px;
+    padding-left: 56px;
+    line-height: 1.8em;
+}
+
+.register-button {
+    display: flex;
+    background-color: #fff;
+    margin: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-button p {
+    color: #333;
+    padding: 8px 8px 8px 40px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.register-button img {
+    margin: 10px 10px 10px 0;
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+}
+
+.xcareer-container {
+    margin: 3% 5%;
+    border: solid 4px #11296C;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* エージェントバナー */
+
+.xcareer-container img {
+    margin-top: 16px;
+}
+
+.xcareer-img {
+    width: 50%;
+}
+
+.xcareer-container h1 {
+    color: #11296C;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.xcareer-points {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.points-listmark img {
+    margin-top: 0;
+    padding-right: 4px;
+}
+
+.xcareer-contact {
+    background-color: #11296C;
+    color: #fff;
+    padding: 16px 56px;
+    font-weight: 700;
+    border-radius: 4px;
+    box-shadow: 0 3px 0 0 rgb(7, 23, 70);
+    font-size: 14px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    cursor: pointer;
+    border: none;
+}
+
+.xcareer-contact img {
+    margin-top: 0;
+}
+
+/* ボトムヘッダー */
+
+.header-bottom {
+    background: linear-gradient(90deg, #0C1438,#11296C);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.header-bottom-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1024px;
+    align-items: center;
+    position: relative;
+}
+
+.header-bottom-menu-line {
+    padding-bottom: 4px;
+    border-right: solid 1px #fff;
+    font-size: 16px;
+}
+
+.header-bottom-menu-contents {
+    padding-left: 16px;
+    cursor: pointer;
+}
+
+.header-bottom-text {
+    font-size: 12px;
+    color: #fff;
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+.header-bottom-button {
+    background-color: #CC2936;
+    box-shadow: 0 3px 0 0 rgb(172, 22, 34);
+    border-radius: 5px;
+    border: solid 1px #CC2936;
+    color: #fff;
+    padding: 6px 16px;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 8px 0 0;
+    cursor: pointer;
+}
+
+/* 法人向けhoverナビ */
+
+.company-navi-container {
+    display: none;
+}
+
+.company-navi-container-hover {
+    position: absolute;
+    top: 110%;
+    right: 15%;
+    width: 15%;
+    height: 180px;
+    background-color: #fff;
+    color: #11296C; 
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    z-index: 10;   
+}
+
+.company-navi-list {
+    list-style: none;
+    padding: 8px 16px;
+}
+
+.company-navi-contents {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.company-navi-line {
+    border: solid 1px;
+}
+
+.compnay-navi-rightnavi {
+    position: absolute;
+    right: 0;
+    padding-right: 16px;
+}
+
+/* 中央タイトル */
+
+.center-section {
+    background: linear-gradient(90deg, #0C1438,#11296C);
+    color: #fff;
+    text-align: center;
+    height: 280px;
+    position: relative;
+}
+
+.center-section-container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.center-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: .1em;
+    margin: 0;
+    padding-top: 3%;
+}
+
+.center-text {
+    font-size: 12px;
+}
+
+.center-logo {
+    position: absolute;
+    right: 18%;
+    top: 0%;
+    z-index: 0;
+}
+
+.center-logo-hide {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100px;
+    background-color: #F1F1F3;
+}
+
+/* スライダー */
+
+.myswiper-wrapper {
+    overflow: hidden;
+  } 
+
+.swiper {
+    position: absolute;
+    top: 30%;
+    left: 26%;
+    max-width: 350px;
+    overflow: visible !important; 
+}
+
+.swiper-slide img{
+    transition: 0.3s;
+    transform: scale(0.4);
+    border-radius: 5px;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+.swiper-slide-hide {
+    display: none;
+}
+
+.swiper-slide-active img{
+    transform: scale(0.6);
+    border-radius: 5px;
+    opacity: 1;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.swiper-slide-prev img,
+.swiper-slide-next img {
+    transform: scale(0.4);
+    border-radius: 5px;
+    opacity: 1;
+    display: inline-block;
+}
+
+.swiper-pagination {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    bottom: 120%;
+}
+
+.swiper-pagination-bullet {
+    width: 56px;
+    height: 8px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #11296C;
+    background: #fff;
+    border-radius: 0;
+  }
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #11296C;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    position: absolute;
+    width: 97%;
+    bottom: -200px;
+  }
+
+/* 検索ボックス */
+
+.search-section {
+    background: linear-gradient(90deg, #0C1438,#11296C);
+    padding-bottom: 1%;
+    border-radius: 8px;
+    max-width: 1024px;
+    margin: 15% auto 0 auto;
+}
+
+.search-box-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.search-container {
+    background-color: #DBDFE9;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-box-container {
+    display: flex;
+    align-items: s;
+}
+
+.search-detail-container {
+    width: 25%;
+    display: flex;
+    align-items: stretch;
+    border-bottom: solid 1px #11296C;
+}
+
+.search-detail-container2 {
+    width: 25%;
+    display: flex;
+    align-items: stretch;
+}
+
+.search-title-box {
+    width: 100%;
+    height: 100%;
+    padding: 25px 32px;
+    display: flex;
+    align-items: center; 
+}
+
+.search-title-box3 {
+    width: 100%;
+    padding: 68px 32px;
+    display: flex;
+    align-items: center; 
+}
+
+.search-title-box4 {
+    width: 100%;
+    padding: 33px;
+    display: flex;
+    align-items: center; 
+}
+
+.title-icon {
+    margin-right: 16px;
+}
+
+.title-text {
+    display: inline-block;
+    align-items: center; 
+    color: #11296C;
+    font-weight: 700;
+    padding: 5% 5% 3% 0;
+}
+
+.search-select-box {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 3%;
+    background-color: #fff;
+    border-bottom: solid 1px #DBDFE9;
+}
+
+.search-select-box2 {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 24px 24px 0 0px;
+    background-color: #fff;
+    border-bottom: solid 1px #DBDFE9;
+}
+
+.search-select-box3 {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: solid 1px #DBDFE9;
+}
+
+.search-select-box4 {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 32px 32px 32px 40px;
+    background-color: #fff;
+    border-bottom: solid 1px #DBDFE9;
+}
+
+.selected-list {
+    list-style: none;
+    color: #333;
+    font-weight: 700;
+    vertical-align: middle;
+    padding-left: 8px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 150%;
+}
+
+.search-selectbtn {
+    display: flex;
+    width: 25%;
+}
+
+.selectbtn {
+    background-color: #11296C;
+    color: #fff;
+    border-radius: 5px;
+    padding: 6px 40px;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+}
+
+.freeword-container {
+    width: 75%;
+    padding: 40px 32px;
+    background-color: #fff;
+}
+
+.free-wordbox {
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: solid 1px #11296C;
+    font-size: 16px;
+    box-shadow: 0 3px 0 0 rgba(51, 48, 0, .2);
+}
+
+.free-wordbox:focus {
+    outline: solid 1px #11296C;
+}
+
+/* 検索ボックスアコーディオン */
+
+.search-accordion {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.accordion-btn {
+    margin: 2% 0;
+    border: solid 2px #11296C;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 0 rgb(7, 23, 70);
+    padding: 16px 0;
+    cursor: pointer;
+}
+
+.accordion-btn-container {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 42%;
+}
+
+.accordion-btn-text {
+    color: #11296C;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.accordion-plusmark {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.accordion-minusmark {
+    display: none;
+}
+
+.accordion-plusmark2 {
+    display: none;
+}
+
+.accordion-minusmark2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.accordion-section {
+    display: none;
+}
+
+.accordion-section-open {
+    background: linear-gradient(90deg, #0C1438,#11296C);
+    padding: 1% 0;
+}
+
+.search-selected {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+}
+
+.search-select-list2 {
+    width: 60%;
+}
+
+.income-detail {
+    display: flex;
+    align-items: center;
+    vertical-align: text-bottom;
+    margin-left: 24px;
+}
+
+.income-detail-box {
+    width: 75%;
+    padding: 16px;
+    border-radius: 8px;
+    border: solid 1px #11296C;
+    font-size: 16px;
+    box-shadow: 0 3px 0 0 rgba(51, 48, 0, .2);
+    margin: 16px 8px 0 24px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.unit {
+    margin-top: 16px;
+    font-weight: 600;
+}
+
+/* チェックボックス */
+
+input[type=checkbox] {
+    display: none; 
+ }   
+
+.checkbox-list {
+    padding-right: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.checked-border {
+    margin-bottom: 32px;
+}
+
+.checkbox-label {
+    background-color: #F1F1F3;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 16px;
+}
+
+.checkbox-label:hover {
+    background-color: #DBDFE9;
+    border-radius: 4px;
+    color: #11296C;
+}
+
+.checkbox-label-border {
+    border:solid 1px #4E6091;
+    background-color: #cad3e7;
+    border-radius: 5px;
+    padding: 8px 6px 8px 7px;
+    color: #11296C;
+    margin: -10px 16px 24px 0;
+}
+
+.checkbox {
+    display: inline-block;
+    padding: 8px;
+    padding-right: 16px;
+    color: #333;
+  }
+
+.checkbox-text {
+    position: relative; 
+    padding: 0 0 0 32px; 
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+.checkbox-text-checked {
+    position: relative; 
+    padding: 0 0 0 32px; 
+    font-size: 14px;
+    color: #11296C;
+    font-weight: 900;
+}
+
+.checkbox-text:after {
+    position: absolute; 
+    content: ""; 
+    display: block; 
+    top: 50%; 
+    left: 8px; 
+    margin: -12px 0 0 -2px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid rgb(214, 215, 220); 
+    border-radius: 20%; 
+    background-color: #fff;
+  }
+
+.checkbox-text-checked:after {
+    position: absolute; 
+    content: ""; 
+    display: block; 
+    top: 50%; 
+    left: 8px; 
+    margin: -12px 0 0 -2px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid rgb(214, 215, 220); 
+    border-radius: 20%; 
+    background-color: #fff;
+  }
+
+.checkbox-text:hover:after {
+    border-color: #a9a9c6; 
+ }
+
+.checkbox-text-checked:after, 
+.checkbox-text-checked:before {
+    position: absolute; 
+    content: ""; 
+    display: block; 
+    top: 50%;
+}
+
+.checkbox-text-checked:before {
+    left: 14px; 
+    margin-top: -7px; 
+    width: 6px; 
+    height: 11px; 
+    border-right: 2px solid #11296c; 
+    border-bottom: 2px solid #11296C; 
+    transform: rotate(45deg); 
+    opacity: 0; 
+    z-index: 10;
+}
+
+input[type=checkbox]:checked + .checkbox-text-checked:before {
+    opacity: 1; 
+}
+
+/* 全て選択チェックボックス */
+
+.checkbox-all-container {
+    margin: 40px 0 0 24px;
+}
+
+.checkbox-label-all {
+    background-color: #11296C;
+    padding: 16px 24px 16px 8px;
+    border-radius: 5px;
+}
+
+.checkbox-label-all:hover {
+    opacity: .9;
+}
+
+.checkbox {
+    display: inline-block;
+    padding: 8px;
+    padding-right: 16px;
+    color: #333;
+  }
+
+.checkbox-text-all {
+    position: relative; 
+    padding: 0 0 0 32px; 
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+.checkbox-text-all-checked {
+    position: relative; 
+    padding: 0 0 0 32px; 
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.checkbox-text-all:after {
+    position: absolute; 
+    content: ""; 
+    display: block; 
+    top: 50%; 
+    left: 8px; 
+    margin: -10px 0 0 -2px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(214, 215, 220); 
+    border-radius: 20%; 
+    background-color: #fff;
+  }
+
+  .checkbox-text-all-checked:after {
+    position: absolute; 
+    content: ""; 
+    display: block; 
+    top: 50%; 
+    left: 8px; 
+    margin: -10px 0 0 -2px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(214, 215, 220); 
+    border-radius: 20%; 
+    background-color: #fff;
+  }
+
+.checkbox-text-all:hover:after {
+    border-color: #a9a9c6; 
+ }
+
+.checkbox-text-all-checked:after, 
+.checkbox-text-all-checked:before {
+    position: absolute; 
+    content: ""; 
+    display: block; 
+    top: 50%;
+}
+
+.checkbox-text-all-checked:before {
+    left: 14px; 
+    margin-top: -7px; 
+    width: 6px; 
+    height: 11px; 
+    border-right: 2px solid #11296c; 
+    border-bottom: 2px solid #11296C; 
+    transform: rotate(45deg); 
+    opacity: 0; 
+    z-index: 10;
+}
+
+input[type=checkbox]:checked + .checkbox-text-all-checked:before {
+    opacity: 1; 
+}
+
+/* 勤務地モーダルチェックボックス */
+
+.checkbox-list-container {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0 0 32px;
+}
+
+.checkbox-list-contents {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px 0;
+}
+
+.checkbox-list-area {
+    padding-right: 8px;
+    display: block;
+    text-align: left;
+}
+
+.checkbox-label-area {
+    background-color: #F1F1F3;
+    padding: 16px 0px;
+    border-radius: 5px;
+}
+
+.checkbox-label-area-checked {
+    background-color: #cad3e7;
+    border-radius: 5px;
+}
+
+.checkbox-area {
+    display: inline-block;
+    padding: 16px 4px;
+    color: #333;
+  }
+
+.checkbox-label-area:hover {
+    background-color: #DBDFE9;
+    border-radius: 4px;
+    color: #11296C;
+}
+
+.checkbox-label-border-area {
+    border:solid 1px #4E6091;
+    background-color: #cad3e7;
+    border-radius: 5px;
+    padding: 14px 0;
+    color: #11296C;
+}
+
+.checkbox-text-area {
+    position: relative; 
+    padding: 16px 72px 16px 40px; 
+    font-size: 16px;
+    font-weight: 600;
+}
+  
+.text3 {
+    padding: 16px 56px 16px 40px;
+}
+
+.checkbox-text-area-checked {
+    position: relative; 
+    padding: 16px 69px 16px 40px; 
+    font-size: 16px;
+    color: #11296C;
+    font-weight: 900;
+}
+
+.text3-checked {
+    padding: 16px 53px 16px 40px;
+}
+
+.checkbox-text-area:after {
+    position: absolute; 
+    content: ""; 
+    display: block; 
+    top: 50%; 
+    left: 8px; 
+    margin: -12px 0 0 4px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid rgb(214, 215, 220); 
+    border-radius: 20%; 
+    background-color: #fff;
+  }
+
+.checkbox-text-area-checked:after {
+    position: absolute; 
+    content: ""; 
+    display: block; 
+    top: 50%; 
+    left: 8px; 
+    margin: -12px 0 0 4px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid rgb(214, 215, 220); 
+    border-radius: 20%; 
+    background-color: #fff;
+  }
+
+.checkbox-text-area:hover:after {
+    border-color: #a9a9c6; 
+ }
+
+.checkbox-text-area-checked:after, 
+.checkbox-text-area-checked:before {
+    position: absolute; 
+    content: ""; 
+    display: block; 
+    top: 50%;
+}
+
+.checkbox-text-area-checked:before {
+    left: 20px; 
+    margin-top: -7px; 
+    width: 6px; 
+    height: 11px; 
+    border-right: 2px solid #11296c; 
+    border-bottom: 2px solid #11296C; 
+    transform: rotate(45deg); 
+    opacity: 0; 
+    z-index: 10;
+}
+
+input[type=checkbox]:checked + .checkbox-text-area-checked:before {
+    opacity: 1; 
+}
+
+/* 勤務地チェックボックス生成用 */
+
+.noselect-checked-list {
+    display: flex;
+    margin: 8px 0;
+}
+
+.noselect-checked-list-selected {
+    display: none;
+}
+
+.selected-checked-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px 0;
+}
+
+.label-area-selected {
+    background-color: #cad3e7;
+    border:solid 1px #4E6091;
+    border-radius: 5px;
+    padding: 4px 0;
+    color: #11296C;
+    margin-right: 8px;
+}
+
+.checkbox-area {
+    display: inline-block;
+    padding: 16px 4px;
+    color: #333;
+}
+
+.text3 {
+    padding: 16px 56px 16px 40px;
+}
+
+.text-area-selected {
+    position: relative; 
+    padding: 0px 8px 0px 40px; 
+    font-size: 14px;
+    color: #11296C;
+    font-weight: 900;
+}
+
+.text3-checked {
+    padding: 16px 53px 16px 40px;
+}
+
+.text-area-selected:after {
+    position: absolute; 
+    content: ""; 
+    display: block; 
+    top: 50%; 
+    left: 8px; 
+    margin: -12px 0 0 4px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid rgb(214, 215, 220); 
+    border-radius: 20%; 
+    background-color: #fff;
+}
+
+.text-area-selected:after, 
+.text-area-selected:before {
+    position: absolute; 
+    content: ""; 
+    display: block; 
+    top: 50%;
+}
+
+.text-area-selected:before {
+    left: 20px; 
+    margin-top: -7px; 
+    width: 6px; 
+    height: 11px; 
+    border-right: 2px solid #11296c; 
+    border-bottom: 2px solid #11296C; 
+    transform: rotate(45deg); 
+    opacity: 0; 
+    z-index: 10;
+}
+
+.text-area-selected:before {
+    opacity: 1; 
+}
+
+/* ラジオボタン */
+
+.radiobtn-list {
+    text-align: left; 
+    margin: -16px 0 0 40px;
+}
+
+input[type="radio"] {
+    display: none;
+  }
+
+.radiobtn-text {
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: 600;
+}
+  
+.radiobtn-text:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    padding: 5px;
+    background-clip: content-box;
+    vertical-align: text-top;
+    box-sizing: content-box;
+}
+  
+  input[type="radio"]:not(:checked) + .radiobtn-text:before {
+    border-color: #D6D7DC;
+}
+  
+  input[type="radio"]:checked + .radiobtn-text:before {
+    border-color: #D6D7DC;
+    background-color: #11296C;
+}
+
+/* 検索ボタン */
+
+.searchbtn-section {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hit-count {
+    color: #CC2936;
+    font-weight: 900;
+    font-size: 45px;
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.hit-text {
+    margin-left: 4px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.reset-button {
+    background-color: #A5A5A6;
+    padding: 16px 72px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: .1em;
+    border: none;
+    border-radius: 5px;
+    box-shadow:  0 3px 0 0 rgb(140, 140, 140);
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.save-button {
+    background-color: #11296C;
+    padding: 16px 56px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: .1em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 0 rgb(7, 23, 70);
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.search-button {
+    background-color: #CC2936;
+    padding: 16px 56px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: .1em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 0 rgb(172, 22, 34);
+    cursor: pointer;
+}
+
+/* 勤務地モーダル */
+
+.modal-container{
+    display: none;
+}
+
+.modal-background-open {
+    background-color: #4a4a4a;
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-container-open {
+    max-width: 1024px;
+    margin: 1% auto;
+}
+
+.select-area {
+    background-color: #4a4a4a;
+}
+
+.area-menu-list {
+    padding: 0;
+    margin: 0;
+}
+
+.modal-menu-list-contents {
+    list-style: none;
+    background-color: #fff;
+    color: #11296C;
+    font-weight: 600;
+    font-size: 14px;
+    border: solid 1px #D6D7DC;
+    padding: 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.modal-menu-list-contents:hover {
+    background-color: #DBDFE9;
+}
+
+.modal-close {
+    text-align: right;
+}
+
+.modal-close-button {
+    background-color: #F1F1F3;
+    box-shadow: 0 3px 0 0 rgb(189, 189, 191);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.modal-close-text {
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    color: #333;
+}
+
+.menu-list-container {
+    max-width: 280px;
+    width: 100%;
+    padding: 0;
+}
+
+.menu-list {
+    margin: 0;
+}
+
+.modal-list-empty {
+    list-style: none;
+    height: 174px;
+    border: solid 1px #D6D7DC;
+    background-color: #fff;
+}
+
+.modal-contents-container {
+    display: flex;
+}
+
+.modal-main-container {
+    display: none;
+}
+
+.modal-main-container-visible {
+    border: solid 1px #D6D7DC;
+    max-width: 744px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.select-all {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-decision-container {
+    text-align: center;
+    background-color: #fff;
+    border: solid 1px #D6D7DC;
+    padding: 16px 0;
+}
+
+.modal-reset-button {
+    background-color: #A5A5A6;
+    padding: 16px 126px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: .1em;
+    border: none;
+    border-radius: 5px;
+    box-shadow:  0 3px 0 0 rgb(140, 140, 140);
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* こだわり条件モーダル */
+
+.focus-modal-container {
+    display: none;
+}
+
+.focus-modal-container-open {
+    max-width: 1024px;
+    margin: 1% auto;
+}
+
+.focus-modal {
+    background-color: #fff;
+    border: solid 1px #D6D7DC;
+    max-height: 90vh;
+    overflow-y: auto; 
+}
+
+.focus-modal::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+}
+
+.focus-modal::-webkit-scrollbar-thumb {
+    background-color: #D6D7DC;
+    border-radius: 20px;
+  }
+
+.focus-container {
+    margin-top: 40px;
+}
+
+.focus-section {
+    margin: 0 16px;
+}
+.focus-title {
+    padding: 16px;
+    background-color: #11296C;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    margin: 0 8px 24px 8px;
+}
+
+/* 求人票リスト */
+
+.top-list-section {
+    max-width: 1024px;
+    margin: 1% auto;
+    display: flex;
+}
+
+.top-container {
+    display: flex;
+}
+
+.top-left-container{
+    width: 90%;
+}
+
+.recruit-origin-list {
+    font-size: 18px;
+}
+
+.recruit-card {
+    border: 1px solid #cfcfd8;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    background-color: #fff;
+}
+
+.recruit-card:hover {
+    box-shadow: 2px 0px 10px rgba(54, 54, 54, 0.1);
+    border: solid 1px #11296c;
+}
+
+.recruit-pic {
+    width: 250px;
+    border-radius: 5px;
+}
+
+.recruit-title {
+    display: flex;
+    margin: 3%;
+}
+
+.recruit-title-right {
+    margin-left: 4%;
+}
+
+.recruit-list-title{
+    color: #CC2936;
+    text-decoration:underline solid #CC2936;
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.work-type-tag {
+    background:  linear-gradient(90deg, #0a0f3b,#25376d);
+    border-radius: 15px;
+    padding: 0.5% 3%;
+    font-weight: lighter;
+    color: #ededed;
+    font-size: 14px;
+}
+
+.company-name{ 
+    vertical-align: text-top;
+}
+
+.hr-solid {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.recruit-condition {
+    display: flex;
+    margin: 3%;
+}
+
+.recruit-condition-left{
+    width: 60%;
+}
+
+.recruit-section {
+    display: flex;
+    width: 100%;
+}
+
+.each-title {
+    width: 25%;
+}
+.recruit-detail {
+    margin-left: 2%;
+    vertical-align: middle;
+    font-weight: 600;
+    color: #525252;
+    font-size: 15px;
+}
+
+.recruit-detail2 {
+    margin-left: 2.5%;
+    vertical-align: middle;
+    font-weight: 600;
+    color: #525252;
+    font-size: 15px;
+}
+
+.recruit-info {
+    margin-left: 15%;
+    vertical-align: middle;
+    text-align: left;
+    color: #525252;
+    font-size: 15px;
+}
+
+.recruit-info2 {
+    margin-left: 11.5%;
+    vertical-align: middle;
+    text-align: left;
+    color: #525252;
+    font-size: 15px;
+}
+
+.recruit-info3 {
+    margin-left: 8.5%;
+    vertical-align: middle;
+    text-align: left;
+    color: #525252;
+    font-size: 15px;
+}
+
+.money-red {
+    font-family: 'Rubik', sans-serif;
+    color: #CC2936;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.recruit-tag {
+    width: 40%;
+}
+
+.tag {
+    display: inline-block;
+    border: solid 1px #11296c;
+    border-radius: 5px; 
+    padding: 1% 3%;
+    margin: 2% 1%;
+    color: #11296c;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.tag-side {
+    display: inline-block;
+    border: solid 1px #11296c;
+    border-radius: 5px; 
+    padding: 1% 3%;
+    margin: 2% 1%;
+    color: #11296c;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.tag-side:hover {
+    background-color: #11296c;
+    color: #fff;
+}
+
+.work-detail {
+    font-size: 16px;
+    background-color: #e9e9ef;
+    text-align: center;
+    margin: 2% 2% 0 2%;
+    font-weight: 400;
+}
+
+.work-detail-description {
+    margin: 1% 2%;
+    font-size: 14px;
+}
+
+.recruit-button {
+    display: flex;
+}
+
+.save {
+    display: flex;
+    justify-content: center; 
+    margin: 3% 1% 3% 2%;
+    width: 50%;
+    background-color: #FDE9D2;
+    border: none;
+    border-radius: 5px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-shadow: 0 4px 0 0 rgb(255, 220, 158);
+    cursor: pointer;
+}
+
+.save:hover {
+    opacity: .85;
+}
+
+.save-after {
+    background-color: #F7931E;
+    cursor: pointer;
+}
+
+.save-text {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-left: 2%;
+}
+
+.save-text-after {
+    display: none;
+}
+
+.save-done-text {
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 2%;
+}
+
+.save-done {
+    display: none;
+}
+
+.detail-confirm {
+    display: flex;
+    justify-content: center; 
+    margin: 3% 2% 3% 1%;
+    width: 50%;
+    background-color: #CC2936;
+    border: none;
+    border-radius: 5px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-shadow: 0 4px 0 0 rgb(172, 22, 34);
+    cursor: pointer;
+}
+
+.detail-confirm:hover {
+    opacity: .85;
+}
+
+.detail-confirm-text {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin: 1px 0 0 2%;
+}
+
+.top-right-container {
+    width: 50%;
+}
+
+.category-search{
+    margin-left: 5%;
+}
+
+.category-search-title {
+    font-size: 16px;
+    margin-top: 7%;
+}
+
+.search-work-type-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.work-type-detail {
+    width: 80%;
+    font-size: 14px;
+    color:#11296c;
+    font-weight: 600;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.work-type-detail:hover {
+    transform: translate(3%, 3%);
+}
+
+.list-rightnavi {
+    margin-left: 3%;
+}
+
+.focus-type-title {
+    font-size: 13px;
+    color: #6f73a1;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-left: 1%;
+}
+
+.info-title {
+    font-size: 18px;
+    background-color: #11296c;
+    color: #fff;
+
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    padding: 2% 2%;
+    margin-bottom: 0;
+}
+
+.info-container {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.info-container:hover {
+    box-shadow: 2px 0px 10px rgba(54, 54, 54, 0.2);
+    background-color: #EFF1F6;
+}
+
+.first-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 2%;
+}
+
+.salary {
+    color: #6f71ae;
+    font-size: 14px;
+}
+
+.salary-money {
+    font-family: 'Rubik', sans-serif;
+    color: #CC2936;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.company {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.second-flex {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.info-discription {
+    margin-left: 2%;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.info-detail {
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.work-place-icon2 {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.info-subtitle {
+    font-weight: 600;
+    margin-right: 5%;
+    font-size: 14px;
+    color: #515151;
+}
+
+.info-subtitle-detail {
+    font-size: 14px;
+    color: #515151;
+}
+
+.info-subtitle2 {
+    font-weight: 600;
+    margin-right: 7%;
+    font-size: 14px;
+    color: #515151;
+}
+
+.tag-contents2 {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.tag2 {
+    display: inline-block;
+    border: solid 1px #11296c;
+    border-radius: 5px; 
+    padding:0 2%;
+    margin: 0.5%;
+    margin-top: 1%;
+    color: #11296c;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+.hr-solid2 {
+    margin: 0;
+}
+
+.tag-empty {
+    padding-bottom: 2%;
+}
+
+.more {
+    display: flex;
+    background-color: #e2e4ec;
+    color: #11296c;
+    padding: 3%;
+    justify-content: center;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.hover {
+    display: none;
+}
+
+.default-after {
+    display: none;
+}
+
+.more:hover {
+    background-color: #11296c;
+    color: #fff;
+}
+
+.more img:hover {
+    background-color: #11296c;
+    color: #fff;
+}
+
+.more-detail {
+    display: inline-block;
+    font-weight: 600;
+    margin-right: 3%;
+    font-size: 16px;
+}
+
+.area-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    border: solid 1px #d5d8e1;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 0;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.area-title-hover {
+    border: solid 1px #11296c;
+    background-color: #ecedf4;
+}
+
+.area-open-hover {
+    border: solid 1px #d5d8e1;
+    background-color: #fff;
+}
+
+.turn-up-before {
+    transition: all 0.5s;
+}
+
+.turn-up {
+    transform: rotate(-180deg);
+    transition: all 0.5s;
+}
+
+.area-title-radius {
+    border-radius: 5px 5px 0 0;
+}
+
+.area-title2 {
+    font-weight: 600;
+}
+
+.area-close {
+    padding-left: 0;
+    margin-top: 0;
+    border: solid 1px #d5d8e1;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+
+.area-close-on {
+    display: none;
+}
+
+.area-open {
+    list-style-type: none;
+    font-weight: 600;
+    padding: 4%;
+    cursor: pointer;
+}
+
+.area-open:hover {
+    background-color: #ecedf4;
+}
+
+.qa-container {
+    margin-left: 5%;
+}
+
+.qa-title {
+    font-size: 16px;
+    margin-top: 7%;
+}
+
+.question {
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.q-mark {
+    background-color: #11296c;
+    border-radius: 50%;
+    color: #fff;
+    padding: 1% 2% 1% 2%;
+    font-family: rubik;
+}
+
+.question-title {
+    font-weight: 600;
+    margin-left: 2%;
+}
+
+.answer {
+    margin-bottom: 5%;
+    display: flex;
+}
+
+.a-mark {
+    background-color:#CC2936;
+    border-radius: 50%;
+    color: #fff;
+    padding: 0 2% 0.5% 2%;
+    font-family: rubik;
+    height: 5%;
+    width: 10%;
+}
+
+.answer-contents {
+    font-size: 16px;
+    margin-left: 2%;
+}

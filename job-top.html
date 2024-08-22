@@ -1,0 +1,2583 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全国の工場・製造業の求人一覧 ｜Xちゃん</title>
+    <!-- Swiperの読み込み -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Google fontの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSSの読み込み -->
+    <Link rel="stylesheet" href="css/style-job-top.css?v=1.0">
+</head>
+<body class="body">
+    <header class="header">
+        <section class="header-top">
+            <div class="header-top-container">
+                <div class="header1">           
+                    <h1 class="header-title">工場・製造業の求人・転職情報サイト</h1>
+                    <img src=icon\logo.png alt="Xちゃんロゴ" class="title-logo">
+                </div>
+                <div class="header1-icon">
+                    <div class="header1-icon2">
+                        <img src=icon\search.png alt="検索アイコン">
+                        <p class="header-text">求人検索</p>
+                    </div>
+                    <div class="header1-icon2" id="slidemenu">
+                        <img src=icon\menu.png alt="メニューアイコン">
+                        <p class="header-text">メニュー</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="header-bottom">
+            <div class="header-bottom-container">
+                <div class="header-bottom-menu">
+                    <span class="header-bottom-menu-contents">
+                        <img src=icon\register-white.png alt="会員登録アイコン">
+                        <span class="header-bottom-text">会員登録</span>
+                    </span>
+                    <span class="header-bottom-menu-line"></span>
+                    <span class="header-bottom-menu-contents">
+                        <img src=icon\view-white.png alt="閲覧履歴アイコン">
+                        <span class="header-bottom-text">閲覧履歴</span>
+                    </span>
+                    <span class="header-bottom-menu-line"></span>
+                        <span class="header-bottom-menu-contents">
+                        <img src=icon\star-white.png alt="お気に入りアイコン">
+                        <span class="header-bottom-text">お気に入り</span>
+                    </span>
+                </div>
+                <div class="header-bottom-button-container">
+                    <button type="button" class="header-bottom-button" id="company-navi">
+                        <span class="header-bottom-button-text">法人の方はこちら</span>
+                        <img src=icon\down.png alt="ナビアイコン">
+                    </button>
+                    <button type="button" class="header-bottom-button">
+                        <img src=icon\login-white.png alt="ログインアイコン">
+                        <span class="header-bottom-button-text">ログインする</span>
+                    </button>
+                </div>
+                <div class="company-navi-container">
+                    <ul class="company-navi-list">
+                        <li class="company-navi-contents">
+                            人材を探す
+                            <span class="compnay-navi-rightnavi">
+                                <img src=icon\navi-right-mini.png alt="進むマーク">
+                            </span>
+                        </li>
+                        <hr class="company-navi-line">
+                        <li class="company-navi-contents">
+                            案件を探す
+                            <span class="compnay-navi-rightnavi">
+                                <img src=icon\navi-right-mini.png alt="進むマーク">
+                            </span>
+                        </li>
+                        <hr class="company-navi-line">
+                        <li class="company-navi-contents">
+                            協力企業を探す
+                            <span class="compnay-navi-rightnavi">
+                                <img src=icon\navi-right-mini.png alt="進むマーク">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="center-section">
+        <div calss="center-section-container">
+            <h1 class="center-title">Factor Xは、製造業の求人に特化。</h1>
+            <p class="center-text">工場・製造業の求人案件をお探しならFactor X！<br>
+                業界に特化した企業が運営をしているので、あなたにピッタリの求人がピンポイントで見つかります。
+            </p>
+            <div class="center-logo">
+                <img src=icon\x-mark.png alt="Xマーク">
+            </div>
+            <div class="center-logo-hide"></div>
+            <div class="slider">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <div class="myswiper-wrapper"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src=icon\slider.png alt="写真アイコン">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src=icon\slider.png alt="写真アイコン">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src=icon\slider.png alt="写真アイコン">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src=icon\slider.png alt="写真アイコン">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src=icon\slider.png alt="写真アイコン">
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="submit-form">
+        <form action="php/search-select-output.php?v=1.0" method="post">
+            <section class="search-section">
+                <h1 class="search-box-title">まずはカンタン求人検索</h1>
+                    <div class="search-container">
+                        <div class="search-box-container">
+                            <div class="search-detail-container">
+                                <div class="search-title-box">
+                                    <span class="title-icon">
+                                        <img src="icon\work-place.png" alt="勤務地アイコン">
+                                    </span>                    
+                                    <span class="title-text">勤務地</span>
+                                </div>
+                            </div>
+                            <div class="search-select-box">
+                                <div class="search-selected">
+                                    <ul class ="selected-list" id="area-push">
+                                        <li class="noselect-checked-list" id="area-noselect">
+                                            指定なし
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="search-selectbtn">
+                                    <button class="selectbtn" type="button" id="workplace-select">
+                                        選択する
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-box-container">
+                            <div class="search-detail-container">
+                                <div class="search-title-box">
+                                    <span class="title-icon">
+                                        <img src="icon\work-type.png" alt="職種アイコン">
+                                    </span>                    
+                                    <span class="title-text">職種</span>
+                                </div>
+                            </div>
+                            <div class="search-select-box">
+                                <div class="search-selected">
+                                    <ul class="selected-list" id="work-place-checked">
+                                        <li class="selected-checked-list">
+                                            指定なし
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="search-selectbtn">
+                                    <button class ="selectbtn" type="button" id="wt-select">
+                                        選択する
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-box-container">
+                            <div class="search-detail-container2">
+                                <div class="search-title-box">
+                                    <div class="title-icon">
+                                        <img src="icon\free-word.png" alt="フリーワードアイコン">
+                                    </div>
+                                    <span class="title-text">フリーワード</span>
+                                </div>
+                            </div>
+                            <div class="freeword-container">
+                                <input type="text" name="freeword" placeholder="" class="free-wordbox">  
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="search-accordion">
+                <div class="search-accordion-btn">
+                    <button type="button" class="accordion-btn">
+                        <div class="accordion-btn-container">
+                            <span class="accordion-btn-text">詳しい条件を追加</span>
+                            <span class="accordion-plusmark">
+                                <img src="icon\plus.png" alt="プラスアイコン">
+                            </span>
+                            <span class="accordion-minusmark">
+                                <img src="icon\minus.png" alt="マイナスアイコン">
+                            </span>
+                        </div>
+                    </button>
+                </div>
+                <div class="accordion-section">
+                    <div class="search-container">
+                        <div class="search-box-container">
+                            <div class="search-detail-container">
+                                <div class="search-title-box4">               
+                                    <span class="title-text">雇用区分</span>
+                                </div>
+                            </div>
+                            <div class="search-select-box2">
+                                <div class="search-selected">
+                                    <div class="search-select-list">
+                                        <div class="checkbox-list">
+                                            <span class="checked-border">
+                                                <label for="check1-1" class="checkbox-label">
+                                                    <input type="checkbox" name="worktype[]" value="正社員" class="checkbox-input" id="check1-1">
+                                                        <span class="checkbox-text">正社員</span>
+                                                </label>
+                                            </span>
+                                            <span class="checked-border">
+                                                <label for="check1-2" class="checkbox-label">
+                                                    <input type="checkbox" name="worktype[]" value="契約社員（期間工）" class="checkbox-input" id="check1-2">
+                                                        <span class="checkbox-text">契約社員（期間工）</span>
+                                                </label>
+                                            </span>
+                                            <span class="checked-border">
+                                                <label for="check1-3" class="checkbox-label">
+                                                    <input type="checkbox" name="worktype[]" value="派遣社員" class="checkbox-input" id="check1-3">
+                                                        <span class="checkbox-text">派遣社員</span>
+                                                </label>
+                                            </span>   
+                                            <span class="checked-border">
+                                                <label for="check1-4" class="checkbox-label">
+                                                    <input type="checkbox" name="worktype[]" value="パートタイム・アルバイト" class="checkbox-input" id="check1-4">
+                                                        <span class="checkbox-text">パートタイム・アルバイト</span>
+                                                </label>
+                                            </span>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-box-container">
+                            <div class="search-detail-container">
+                                <div class="search-title-box3">               
+                                    <span class="title-text">収入</span>
+                                </div>
+                            </div>
+                            <div class="search-select-box3">
+                                <div class="search-selected">
+                                    <div class="search-select-list2">
+                                        <div class="radiobtn-list">
+                                            <label for="radio1-1" class="radiobtn-label">
+                                                <input type="radio" name="income" value="年収" class="radio-list" id="radio1-1">
+                                                    <span class="radiobtn-text">年収</span>
+                                            </label>
+                                            <label for="radio1-2" class="radiobtn-label">
+                                                <input type="radio" name="income" value="月収" class="radio-list" id="radio1-2">
+                                                    <span class="radiobtn-text">月収</span>
+                                            </label>
+                                            <label for="radio1-3" class="radiobtn-label">
+                                                <input type="radio" name="income" value="日給" class="radio-list" id="radio1-3">
+                                                    <span class="radiobtn-text">日給</span>
+                                            </label>
+                                            <label for="radio1-4" class="radiobtn-label">
+                                                <input type="radio" name="income" value="時給" class="radio-list" id="radio1-4">
+                                                    <span class="radiobtn-text">時給</span>
+                                            </label>
+                                        </div>
+                                        <div class="income-detail">
+                                            <input type="number" name="incomedetail" placeholder="下限なし" class="income-detail-box">  
+                                            <span class="unit">円　～</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-box-container">
+                            <div class="search-detail-container">
+                                <div class="search-title-box4">               
+                                    <span class="title-text">最終学歴</span>
+                                </div>
+                            </div>
+                            <div class="search-select-box2">
+                                <div class="search-selected">
+                                    <div class="search-select-list">
+                                        <div class="radiobtn-list">
+                                            <label for="radio2-1" class="radiobtn-label">
+                                                <input type="radio" name="academicrecord" value="学歴不問" class="radio-list" id="radio2-1">
+                                                    <span class="radiobtn-text">学歴不問</span>
+                                            </label>
+                                            <label for="radio2-2" class="radiobtn-label">
+                                                <input type="radio" name="academicrecord" value="大学院卒業" class="radio-list" id="radio2-2">
+                                                    <span class="radiobtn-text">大学院卒業</span>
+                                            </label>
+                                            <label for="radio2-3" class="radiobtn-label">
+                                                <input type="radio" name="academicrecord" value="大学卒業" class="radio-list" id="radio2-3">
+                                                    <span class="radiobtn-text">大学卒業</span>
+                                            </label>
+                                            <label for="radio2-4" class="radiobtn-label">
+                                                <input type="radio" name="academicrecord" value="高校卒業" class="radio-list" id="radio2-4">
+                                                    <span class="radiobtn-text">高校卒業</span>
+                                            </label>
+                                            <label for="radio2-5" class="radiobtn-label">
+                                                <input type="radio" name="academicrecord" value="短期・専門・高専卒業" class="radio-list" id="radio2-5">
+                                                    <span class="radiobtn-text">短期・専門・高専卒業</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-box-container">
+                            <div class="search-detail-container">
+                                <div class="search-title-box4">               
+                                    <span class="title-text">勤務体制</span>
+                                </div>
+                            </div>
+                            <div class="search-select-box2">
+                                <div class="search-selected">
+                                    <div class="search-select-list">
+                                        <div class="checkbox-list">
+                                            <span class="checked-border">
+                                                <label for="check2-1" class="checkbox-label">
+                                                    <input type="checkbox" name="workshift[]" value="昼勤のみ" class="checkbox-input" id="check2-1">
+                                                        <span class="checkbox-text">昼勤のみ</span>
+                                                </label>
+                                            </span>
+                                            <span class="checked-border">
+                                                <label for="check2-2" class="checkbox-label">
+                                                    <input type="checkbox" name="workshift[]" value="夜勤のみ" class="checkbox-input" id="check2-2">
+                                                        <span class="checkbox-text">夜勤のみ</span>
+                                                </label>
+                                            </span>
+                                            <span class="checked-border">
+                                                <label for="check2-3" class="checkbox-label">
+                                                    <input type="checkbox" name="workshift[]" value="二交替制" class="checkbox-input" id="check2-3">
+                                                        <span class="checkbox-text">二交替制</span>
+                                                </label>
+                                            </span>
+                                            <span class="checked-border">  
+                                                <label for="check2-4" class="checkbox-label">
+                                                    <input type="checkbox" name="workshift[]" value="三交替制" class="checkbox-input" id="check2-4">
+                                                        <span class="checkbox-text">三交替制</span>
+                                                </label>
+                                            </span> 
+                                            <span class="checked-border">  
+                                                <label for="check2-5" class="checkbox-label">
+                                                    <input type="checkbox" name="workshift[]" value="シフト制" class="checkbox-input" id="check2-5">
+                                                        <span class="checkbox-text">シフト制</span>
+                                                </label>
+                                            </span>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-box-container">
+                            <div class="search-detail-container">
+                                <div class="search-title-box4">               
+                                    <span class="title-text">休日</span>
+                                </div>
+                            </div>
+                            <div class="search-select-box2">
+                                <div class="search-selected">
+                                    <div class="search-select-list">
+                                        <div class="checkbox-list">
+                                            <span class="checked-border">
+                                                <label for="check3-1" class="checkbox-label">
+                                                    <input type="checkbox" name="offday[]" value="土日休み" class="checkbox-input" id="check3-1">
+                                                        <span class="checkbox-text">土日休み</span>
+                                                </label>
+                                            </span>
+                                            <span class="checked-border">
+                                                <label for="check3-2" class="checkbox-label">
+                                                    <input type="checkbox" name="offday[]" value="祝日休み" class="checkbox-input" id="check3-2">
+                                                        <span class="checkbox-text">祝日休み</span>
+                                                </label>
+                                            </span>
+                                            <span class="checked-border">
+                                                <label for="check3-3" class="checkbox-label">
+                                                    <input type="checkbox" name="offday[]" value="長期休暇あり" class="checkbox-input" id="check3-3">
+                                                        <span class="checkbox-text">長期休暇あり</span>
+                                                </label>
+                                            </span>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-box-container">
+                            <div class="search-detail-container2">
+                                <div class="search-title-box">                 
+                                    <span class="title-text">こだわり条件</span>
+                                </div>
+                            </div>
+                        <div class="search-select-box4">
+                            <div class="search-selected">
+                                <ul class="selected-list" id="focus-push">
+                                    <li class="noselect-checked-list" id="focus-noselect">
+                                        指定なし
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="search-selectbtn">
+                                <button class ="selectbtn" type="button" id="focus-select">
+                                    選択する
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="searchbtn-section">
+                <div class="search-count-container">
+                    <span class="hit-count">--</span>
+                    <span class="hit-text">件がヒットしています</span>
+                </div>
+                <div class="search-reset-container">
+                    <button type="reset" class="reset-button">
+                        <span class="reset-button-text">リセット</span>
+                    </button>
+                    <button type="submit" name="save-selected[]" value="save" class="save-button">
+                        <img src="icon\save.png" alt="保存アイコン">
+                        <span class="save-button-text">条件保存</span>
+                    </button>
+                    <button type="submit" name="searh-selected[]" value="search" class="search-button">
+                        <img src="icon\search-white.png" alt="検索アイコン">
+                        <span class="search-button-text">検索する</span>
+                    </button>
+                </div>
+            </section>
+        </form>
+    </section>
+    <section class="top-list-section">
+        <div class="top-container">
+            <div class="top-left-container">
+                <h1 class="recruit-origin-list">あなたが最近見た求人</h1>
+                <div class="recruit-card">
+                    <div class="recruit-title">
+                        <div>
+                            <img src="icon\work-pic.png" alt="求人票サムネイル" class="recruit-pic">   
+                        </div>
+                        <div class="recruit-title-right">
+                            <p class="recruit-list-title">カンタン作業でも高時給で収入アップ↑土日休でプライベート充実◎WiFi完備の格安寮にスグ住める</p>
+                            <label class="work-type-tag">正社員</label>
+                            <span class="company-name">株式会社都工業</span>
+                        </div>
+                    </div>
+                    <div>
+                        <hr class="hr-solid" color="#D6D7DC" size="1">
+                    </div>
+                    <div class="recruit-condition">
+                        <div class="recruit-condition-left">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\yen.png" alt="給与アイコン">
+                                    <span class="recruit-detail">給与</span>
+                                </div>
+                                <div class="recruit-info">
+                                    <span>月収</span> 
+                                    <span class="money-red">210,000</span>
+                                    <span>円</span>
+                                </div>
+                            </div>
+                            <hr class="hr-solid" color="#D6D7DC" size="1">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\work-place2.png" alt="勤務地アイコン">
+                                    <span class="recruit-detail">勤務地</span>
+                                </div>
+                                <div class="recruit-info">
+                                    愛知県 岡崎市
+                                </div>
+                            </div>
+                            <hr class="hr-solid" color="#D6D7DC" size="1">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\work-type2.png" alt="職種アイコン">
+                                    <span class="recruit-detail">職種</span>
+                                </div>
+                                <div class="recruit-info">
+                                    金属加工
+                                </div>
+                            </div>
+                            <hr class="hr-solid" color="#D6D7DC" size="1">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\work-style.png" alt="雇用形態アイコン">
+                                    <span class="recruit-detail">雇用形態</span>
+                                </div>
+                                <div class="recruit-info">
+                                    正社員
+                                </div>
+                            </div>
+                            <hr class="hr-solid" color="#D6D7DC" size="1">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\work-cicle.png" alt="勤務体制アイコン">
+                                    <span class="recruit-detail2">勤務体制</span>
+                                </div>
+                                <div class="recruit-info">
+                                    日勤のみ
+                                </div>
+                            </div>
+                            <hr class="hr-solid" color="#D6D7DC" size="1">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\holiday.png" alt="休日アイコン">
+                                    <span class="recruit-detail">休日</span>
+                                </div>
+                                <div class="recruit-info">
+                                    土日休み,祝日休み,長期休暇あり
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="recruit-tag">
+                            <div class="tag-contents">
+                                <span class="tag">海外展開あり</span>
+                                <span class="tag">年間休日多い</span>
+                            </div>
+                            <div class="tag-contents">
+                                <span class="tag">入社特典あり</span>
+                                <span class="tag">リモートワーク</span>
+                            </div>
+                            <div class="tag-contents">
+                                <span class="tag">副業可</span>
+                                <span class="tag">自然豊か</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="work-detail">仕事内容</h2>
+                        <p class="work-detail-description">仕事内容の説明文が入ります。仕事内容の説明文が入ります。仕事内容の説明文が入ります。仕事内容の説明文が入ります。
+                            仕事内容の説明文が入ります。仕事内容の説明文が入ります。仕事内容の説明文が入ります。仕事内容の説明文が入ります。</p>
+                    </div>
+                    <div class="recruit-button">
+                        <button class="save">
+                            <img src="icon\star-save.png" alt="保存アイコン">
+                            <span class="save-text">保存</span>
+                            <span class="save-done-text save-done">保存済み</span>
+                        </button>
+                        <button class="detail-confirm">
+                            <img src="icon\docu-check.png" alt="詳細確認アイコン">
+                            <span class="detail-confirm-text">詳細を確認</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="recruit-card">
+                    <div class="recruit-title">
+                        <div>
+                            <img src="icon\work-pic.png" alt="求人票サムネイル" class="recruit-pic">   
+                        </div>
+                        <div class="recruit-title-right">
+                            <p class="recruit-list-title">カンタン作業でも高時給で収入アップ↑土日休でプライベート充実◎WiFi完備の格安寮にスグ住める</p>
+                            <label class="work-type-tag">正社員</label>
+                            <span class="company-name">株式会社都工業</span>
+                        </div>
+                    </div>
+                    <div>
+                        <hr class="hr-solid" color="#D6D7DC" size="1">
+                    </div>
+                    <div class="recruit-condition">
+                        <div class="recruit-condition-left">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\yen.png" alt="給与アイコン">
+                                    <span class="recruit-detail">給与</span>
+                                </div>
+                                <div class="recruit-info">
+                                    <span>月収</span> 
+                                    <span class="money-red">210,000</span>
+                                    <span>円</span>
+                                </div>
+                            </div>
+                            <hr class="hr-solid" color="#D6D7DC" size="1">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\work-place2.png" alt="勤務地アイコン">
+                                    <span class="recruit-detail">勤務地</span>
+                                </div>
+                                <div class="recruit-info">
+                                    愛知県 岡崎市
+                                </div>
+                            </div>
+                            <hr class="hr-solid" color="#D6D7DC" size="1">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\work-type2.png" alt="職種アイコン">
+                                    <span class="recruit-detail">職種</span>
+                                </div>
+                                <div class="recruit-info">
+                                    金属加工
+                                </div>
+                            </div>
+                            <hr class="hr-solid" color="#D6D7DC" size="1">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\work-style.png" alt="雇用形態アイコン">
+                                    <span class="recruit-detail">雇用形態</span>
+                                </div>
+                                <div class="recruit-info">
+                                    正社員
+                                </div>
+                            </div>
+                            <hr class="hr-solid" color="#D6D7DC" size="1">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\work-cicle.png" alt="勤務体制アイコン">
+                                    <span class="recruit-detail2">勤務体制</span>
+                                </div>
+                                <div class="recruit-info">
+                                    日勤のみ
+                                </div>
+                            </div>
+                            <hr class="hr-solid" color="#D6D7DC" size="1">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\holiday.png" alt="休日アイコン">
+                                    <span class="recruit-detail">休日</span>
+                                </div>
+                                <div class="recruit-info">
+                                    土日休み,祝日休み,長期休暇あり
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="recruit-tag">
+                            <div class="tag-contents">
+                                <span class="tag">海外展開あり</span>
+                                <span class="tag">年間休日多い</span>
+                            </div>
+                            <div class="tag-contents">
+                                <span class="tag">入社特典あり</span>
+                                <span class="tag">リモートワーク</span>
+                            </div>
+                            <div class="tag-contents">
+                                <span class="tag">副業可</span>
+                                <span class="tag">自然豊か</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="work-detail">仕事内容</h2>
+                        <p class="work-detail-description">仕事内容の説明文が入ります。仕事内容の説明文が入ります。仕事内容の説明文が入ります。仕事内容の説明文が入ります。
+                            仕事内容の説明文が入ります。仕事内容の説明文が入ります。仕事内容の説明文が入ります。仕事内容の説明文が入ります。</p>
+                    </div>
+                    <div class="recruit-button">
+                        <button class="save">
+                            <img src="icon\star-save.png" alt="保存アイコン">
+                            <span class="save-text">保存</span>
+                            <span class="save-done-text save-done">保存済み</span>
+                        </button>
+                        <button class="detail-confirm">
+                            <img src="icon\docu-check.png" alt="詳細確認アイコン">
+                            <span class="detail-confirm-text">詳細を確認</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="recruit-card">
+                    <div class="recruit-title">
+                        <div>
+                            <img src="icon\work-pic.png" alt="求人票サムネイル" class="recruit-pic">   
+                        </div>
+                        <div class="recruit-title-right">
+                            <p class="recruit-list-title">カンタン作業でも高時給で収入アップ↑土日休でプライベート充実◎WiFi完備の格安寮にスグ住める</p>
+                            <label class="work-type-tag">正社員</label>
+                            <span class="company-name">株式会社都工業</span>
+                        </div>
+                    </div>
+                    <div>
+                        <hr class="hr-solid" color="#D6D7DC" size="1">
+                    </div>
+                    <div class="recruit-condition">
+                        <div class="recruit-condition-left">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\yen.png" alt="給与アイコン">
+                                    <span class="recruit-detail">給与</span>
+                                </div>
+                                <div class="recruit-info">
+                                    <span>月収</span> 
+                                    <span class="money-red">210,000</span>
+                                    <span>円</span>
+                                </div>
+                            </div>
+                            <hr class="hr-solid" color="#D6D7DC" size="1">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\work-place2.png" alt="勤務地アイコン">
+                                    <span class="recruit-detail">勤務地</span>
+                                </div>
+                                <div class="recruit-info">
+                                    愛知県 岡崎市
+                                </div>
+                            </div>
+                            <hr class="hr-solid" color="#D6D7DC" size="1">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\work-type2.png" alt="職種アイコン">
+                                    <span class="recruit-detail">職種</span>
+                                </div>
+                                <div class="recruit-info">
+                                    金属加工
+                                </div>
+                            </div>
+                            <hr class="hr-solid" color="#D6D7DC" size="1">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\work-style.png" alt="雇用形態アイコン">
+                                    <span class="recruit-detail">雇用形態</span>
+                                </div>
+                                <div class="recruit-info">
+                                    正社員
+                                </div>
+                            </div>
+                            <hr class="hr-solid" color="#D6D7DC" size="1">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\work-cicle.png" alt="勤務体制アイコン">
+                                    <span class="recruit-detail2">勤務体制</span>
+                                </div>
+                                <div class="recruit-info">
+                                    日勤のみ
+                                </div>
+                            </div>
+                            <hr class="hr-solid" color="#D6D7DC" size="1">
+                            <div class="recruit-section">
+                                <div class="each-title">
+                                    <img src="icon\holiday.png" alt="休日アイコン">
+                                    <span class="recruit-detail">休日</span>
+                                </div>
+                                <div class="recruit-info">
+                                    土日休み,祝日休み,長期休暇あり
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="recruit-tag">
+                            <div class="tag-contents">
+                                <span class="tag">海外展開あり</span>
+                                <span class="tag">年間休日多い</span>
+                            </div>
+                            <div class="tag-contents">
+                                <span class="tag">入社特典あり</span>
+                                <span class="tag">リモートワーク</span>
+                            </div>
+                            <div class="tag-contents">
+                                <span class="tag">副業可</span>
+                                <span class="tag">自然豊か</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="work-detail">仕事内容</h2>
+                        <p class="work-detail-description">仕事内容の説明文が入ります。仕事内容の説明文が入ります。仕事内容の説明文が入ります。仕事内容の説明文が入ります。
+                            仕事内容の説明文が入ります。仕事内容の説明文が入ります。仕事内容の説明文が入ります。仕事内容の説明文が入ります。</p>
+                    </div>
+                    <div class="recruit-button">
+                        <button class="save">
+                            <img src="icon\star-save.png" alt="保存アイコン">
+                            <span class="save-text">保存</span>
+                            <span class="save-done-text save-done">保存済み</span>
+                        </button>
+                        <button class="detail-confirm">
+                            <img src="icon\docu-check.png" alt="詳細確認アイコン">
+                            <span class="detail-confirm-text">詳細を確認</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="new-info">
+                    <h1 class="info-title">新着の求人</h1>
+                    <div class="info-container">
+                        <div class="first-flex">
+                            <div class="salary">
+                                <span>月収</span> 
+                                <span class="salary-money">210,000</span>
+                                <span>円</span>
+                            </div>
+                            <div class="company">
+                                株式会社都工業
+                            </div>
+                        </div>
+                        <div class="second-flex">
+                            <div class="picture">
+                                <img src="icon\work-pic2.png" alt="サムネイル">
+                            </div>
+                            <div class="info-discription">
+                                カンタン作業でも高時給で収入アップ↑土日休でプライベート充実◎WiFi完備の格安寮にスグ住めちゃう！
+                            </div>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\spot.png" alt="勤務地アイコン" class="work-place-icon2">
+                            <span class="info-subtitle">勤務地</span>
+                            <span class="info-subtitle-detail">愛知県 岡崎市</span>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\work-type2.png" alt="職種アイコン">
+                            <span class="info-subtitle2">職種</span>
+                            <span class="info-subtitle-detail">金属加工</span>
+                        </div>
+                        <div class="recruit-tag2">
+                            <div class="tag-contents2">
+                                <span class="tag2">海外展開あり</span>
+                                <span class="tag2">年間休日が多い</span>
+                                <span class="tag2">入社特典あり</span>
+                                <span class="tag2">リモートワーク</span>
+                            </div>
+                            <div class="tag-contents2">
+                                <span class="tag2">副業可</span>
+                                <span class="tag2">自然豊か</span>
+                            </div>
+                            <div class="tag-empty"></div>
+                        </div>
+                    </div>
+                    <hr class="hr-solid2" color="#D6D7DC" size="1">
+                    <div class="info-container">
+                        <div class="first-flex">
+                            <div class="salary">
+                                <span>月収</span> 
+                                <span class="salary-money">210,000</span>
+                                <span>円</span>
+                            </div>
+                            <div class="company">
+                                株式会社都工業
+                            </div>
+                        </div>
+                        <div class="second-flex">
+                            <div class="picture">
+                                <img src="icon\work-pic2.png" alt="サムネイル">
+                            </div>
+                            <div class="info-discription">
+                                カンタン作業でも高時給で収入アップ↑土日休でプライベート充実◎WiFi完備の格安寮にスグ住めちゃう！
+                            </div>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\spot.png" alt="勤務地アイコン" class="work-place-icon2">
+                            <span class="info-subtitle">勤務地</span>
+                            <span class="info-subtitle-detail">愛知県 岡崎市</span>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\work-type2.png" alt="職種アイコン">
+                            <span class="info-subtitle2">職種</span>
+                            <span class="info-subtitle-detail">金属加工</span>
+                        </div>
+                        <div class="recruit-tag2">
+                            <div class="tag-contents2">
+                                <span class="tag2">海外展開あり</span>
+                                <span class="tag2">年間休日が多い</span>
+                                <span class="tag2">入社特典あり</span>
+                                <span class="tag2">リモートワーク</span>
+                            </div>
+                            <div class="tag-contents2">
+                                <span class="tag2">副業可</span>
+                                <span class="tag2">自然豊か</span>
+                            </div>
+                            <div class="tag-empty"></div>
+                        </div>
+                    </div>
+                    <hr class="hr-solid2" color="#D6D7DC" size="1">
+                    <div class="info-container">
+                        <div class="first-flex">
+                            <div class="salary">
+                                <span>月収</span> 
+                                <span class="salary-money">210,000</span>
+                                <span>円</span>
+                            </div>
+                            <div class="company">
+                                株式会社都工業
+                            </div>
+                        </div>
+                        <div class="second-flex">
+                            <div class="picture">
+                                <img src="icon\work-pic2.png" alt="サムネイル">
+                            </div>
+                            <div class="info-discription">
+                                カンタン作業でも高時給で収入アップ↑土日休でプライベート充実◎WiFi完備の格安寮にスグ住めちゃう！
+                            </div>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\spot.png" alt="勤務地アイコン" class="work-place-icon2">
+                            <span class="info-subtitle">勤務地</span>
+                            <span class="info-subtitle-detail">愛知県 岡崎市</span>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\work-type2.png" alt="職種アイコン">
+                            <span class="info-subtitle2">職種</span>
+                            <span class="info-subtitle-detail">金属加工</span>
+                        </div>
+                        <div class="recruit-tag2">
+                            <div class="tag-contents2">
+                                <span class="tag2">海外展開あり</span>
+                                <span class="tag2">年間休日が多い</span>
+                                <span class="tag2">入社特典あり</span>
+                                <span class="tag2">リモートワーク</span>
+                            </div>
+                            <div class="tag-contents2">
+                                <span class="tag2">副業可</span>
+                                <span class="tag2">自然豊か</span>
+                            </div>
+                            <div class="tag-empty"></div>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <span class="more-detail">新着の求人をもっと見る</span>
+                        <span class="hover">
+                            <img src=icon\navi-right-white.png alt="進むマーク">
+                            </span>
+                        <span class="default">
+                        <img src=icon\navi-right.png alt="進むマーク">
+                        </span>
+                    </div>
+                </div>
+                <div class="new-info">
+                    <h1 class="info-title">高収入の求人</h1>
+                    <div class="info-container">
+                        <div class="first-flex">
+                            <div class="salary">
+                                <span>月収</span> 
+                                <span class="salary-money">350,000</span>
+                                <span>円</span>
+                            </div>
+                            <div class="company">
+                                株式会社都工業
+                            </div>
+                        </div>
+                        <div class="second-flex">
+                            <div class="picture">
+                                <img src="icon\work-pic2.png" alt="サムネイル">
+                            </div>
+                            <div class="info-discription">
+                                カンタン作業でも高時給で収入アップ↑土日休でプライベート充実◎WiFi完備の格安寮にスグ住めちゃう！
+                            </div>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\spot.png" alt="勤務地アイコン" class="work-place-icon2">
+                            <span class="info-subtitle">勤務地</span>
+                            <span class="info-subtitle-detail">愛知県 岡崎市</span>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\work-type2.png" alt="職種アイコン">
+                            <span class="info-subtitle2">職種</span>
+                            <span class="info-subtitle-detail">金属加工</span>
+                        </div>
+                        <div class="recruit-tag2">
+                            <div class="tag-contents2">
+                                <span class="tag2">海外展開あり</span>
+                                <span class="tag2">年間休日が多い</span>
+                                <span class="tag2">入社特典あり</span>
+                                <span class="tag2">リモートワーク</span>
+                            </div>
+                            <div class="tag-contents2">
+                                <span class="tag2">副業可</span>
+                                <span class="tag2">自然豊か</span>
+                            </div>
+                            <div class="tag-empty"></div>
+                        </div>
+                    </div>
+                    <hr class="hr-solid2" color="#D6D7DC" size="1">
+                    <div class="info-container">
+                        <div class="first-flex">
+                            <div class="salary">
+                                <span>月収</span> 
+                                <span class="salary-money">350,000</span>
+                                <span>円</span>
+                            </div>
+                            <div class="company">
+                                株式会社都工業
+                            </div>
+                        </div>
+                        <div class="second-flex">
+                            <div class="picture">
+                                <img src="icon\work-pic2.png" alt="サムネイル">
+                            </div>
+                            <div class="info-discription">
+                                カンタン作業でも高時給で収入アップ↑土日休でプライベート充実◎WiFi完備の格安寮にスグ住めちゃう！
+                            </div>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\spot.png" alt="勤務地アイコン" class="work-place-icon2">
+                            <span class="info-subtitle">勤務地</span>
+                            <span class="info-subtitle-detail">愛知県 岡崎市</span>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\work-type2.png" alt="職種アイコン">
+                            <span class="info-subtitle2">職種</span>
+                            <span class="info-subtitle-detail">金属加工</span>
+                        </div>
+                        <div class="recruit-tag2">
+                            <div class="tag-contents2">
+                                <span class="tag2">海外展開あり</span>
+                                <span class="tag2">年間休日が多い</span>
+                                <span class="tag2">入社特典あり</span>
+                                <span class="tag2">リモートワーク</span>
+                            </div>
+                            <div class="tag-contents2">
+                                <span class="tag2">副業可</span>
+                                <span class="tag2">自然豊か</span>
+                            </div>
+                            <div class="tag-empty"></div>
+                        </div>
+                    </div>
+                    <hr class="hr-solid2" color="#D6D7DC" size="1">
+                    <div class="info-container">
+                        <div class="first-flex">
+                            <div class="salary">
+                                <span>月収</span> 
+                                <span class="salary-money">350,000</span>
+                                <span>円</span>
+                            </div>
+                            <div class="company">
+                                株式会社都工業
+                            </div>
+                        </div>
+                        <div class="second-flex">
+                            <div class="picture">
+                                <img src="icon\work-pic2.png" alt="サムネイル">
+                            </div>
+                            <div class="info-discription">
+                                カンタン作業でも高時給で収入アップ↑土日休でプライベート充実◎WiFi完備の格安寮にスグ住めちゃう！
+                            </div>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\spot.png" alt="勤務地アイコン" class="work-place-icon2">
+                            <span class="info-subtitle">勤務地</span>
+                            <span class="info-subtitle-detail">愛知県 岡崎市</span>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\work-type2.png" alt="職種アイコン">
+                            <span class="info-subtitle2">職種</span>
+                            <span class="info-subtitle-detail">金属加工</span>
+                        </div>
+                        <div class="recruit-tag2">
+                            <div class="tag-contents2">
+                                <span class="tag2">海外展開あり</span>
+                                <span class="tag2">年間休日が多い</span>
+                                <span class="tag2">入社特典あり</span>
+                                <span class="tag2">リモートワーク</span>
+                            </div>
+                            <div class="tag-contents2">
+                                <span class="tag2">副業可</span>
+                                <span class="tag2">自然豊か</span>
+                            </div>
+                            <div class="tag-empty"></div>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <span class="more-detail">高収入の求人をもっと見る</span>
+                        <span class="hover">
+                            <img src=icon\navi-right-white.png alt="進むマーク">
+                            </span>
+                        <span class="default">
+                        <img src=icon\navi-right.png alt="進むマーク">
+                        </span>
+                    </div>
+                </div>
+                <div class="new-info">
+                    <h1 class="info-title">入社特典ありの求人</h1>
+                    <div class="info-container">
+                        <div class="first-flex">
+                            <div class="salary">
+                                <span>月収</span> 
+                                <span class="salary-money">250,000</span>
+                                <span>円</span>
+                            </div>
+                            <div class="company">
+                                株式会社都工業
+                            </div>
+                        </div>
+                        <div class="second-flex">
+                            <div class="picture">
+                                <img src="icon\work-pic2.png" alt="サムネイル">
+                            </div>
+                            <div class="info-discription">
+                                カンタン作業でも高時給で収入アップ↑土日休でプライベート充実◎WiFi完備の格安寮にスグ住めちゃう！
+                            </div>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\spot.png" alt="勤務地アイコン" class="work-place-icon2">
+                            <span class="info-subtitle">勤務地</span>
+                            <span class="info-subtitle-detail">愛知県 岡崎市</span>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\work-type2.png" alt="職種アイコン">
+                            <span class="info-subtitle2">職種</span>
+                            <span class="info-subtitle-detail">金属加工</span>
+                        </div>
+                        <div class="recruit-tag2">
+                            <div class="tag-contents2">
+                                <span class="tag2">海外展開あり</span>
+                                <span class="tag2">年間休日が多い</span>
+                                <span class="tag2">入社特典あり</span>
+                                <span class="tag2">リモートワーク</span>
+                            </div>
+                            <div class="tag-contents2">
+                                <span class="tag2">副業可</span>
+                                <span class="tag2">自然豊か</span>
+                            </div>
+                            <div class="tag-empty"></div>
+                        </div>
+                    </div>
+                    <hr class="hr-solid2" color="#D6D7DC" size="1">
+                    <div class="info-container">
+                        <div class="first-flex">
+                            <div class="salary">
+                                <span>月収</span> 
+                                <span class="salary-money">250,000</span>
+                                <span>円</span>
+                            </div>
+                            <div class="company">
+                                株式会社都工業
+                            </div>
+                        </div>
+                        <div class="second-flex">
+                            <div class="picture">
+                                <img src="icon\work-pic2.png" alt="サムネイル">
+                            </div>
+                            <div class="info-discription">
+                                カンタン作業でも高時給で収入アップ↑土日休でプライベート充実◎WiFi完備の格安寮にスグ住めちゃう！
+                            </div>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\spot.png" alt="勤務地アイコン" class="work-place-icon2">
+                            <span class="info-subtitle">勤務地</span>
+                            <span class="info-subtitle-detail">愛知県 岡崎市</span>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\work-type2.png" alt="職種アイコン">
+                            <span class="info-subtitle2">職種</span>
+                            <span class="info-subtitle-detail">金属加工</span>
+                        </div>
+                        <div class="recruit-tag2">
+                            <div class="tag-contents2">
+                                <span class="tag2">海外展開あり</span>
+                                <span class="tag2">年間休日が多い</span>
+                                <span class="tag2">入社特典あり</span>
+                                <span class="tag2">リモートワーク</span>
+                            </div>
+                            <div class="tag-contents2">
+                                <span class="tag2">副業可</span>
+                                <span class="tag2">自然豊か</span>
+                            </div>
+                            <div class="tag-empty"></div>
+                        </div>
+                    </div>
+                    <hr class="hr-solid2" color="#D6D7DC" size="1">
+                    <div class="info-container">
+                        <div class="first-flex">
+                            <div class="salary">
+                                <span>月収</span> 
+                                <span class="salary-money">250,000</span>
+                                <span>円</span>
+                            </div>
+                            <div class="company">
+                                株式会社都工業
+                            </div>
+                        </div>
+                        <div class="second-flex">
+                            <div class="picture">
+                                <img src="icon\work-pic2.png" alt="サムネイル">
+                            </div>
+                            <div class="info-discription">
+                                カンタン作業でも高時給で収入アップ↑土日休でプライベート充実◎WiFi完備の格安寮にスグ住めちゃう！
+                            </div>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\spot.png" alt="勤務地アイコン" class="work-place-icon2">
+                            <span class="info-subtitle">勤務地</span>
+                            <span class="info-subtitle-detail">愛知県 岡崎市</span>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\work-type2.png" alt="職種アイコン">
+                            <span class="info-subtitle2">職種</span>
+                            <span class="info-subtitle-detail">金属加工</span>
+                        </div>
+                        <div class="recruit-tag2">
+                            <div class="tag-contents2">
+                                <span class="tag2">海外展開あり</span>
+                                <span class="tag2">年間休日が多い</span>
+                                <span class="tag2">入社特典あり</span>
+                                <span class="tag2">リモートワーク</span>
+                            </div>
+                            <div class="tag-contents2">
+                                <span class="tag2">副業可</span>
+                                <span class="tag2">自然豊か</span>
+                            </div>
+                            <div class="tag-empty"></div>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <span class="more-detail">入社特典ありの求人をもっと見る</span>
+                        <span class="hover">
+                            <img src=icon\navi-right-white.png alt="進むマーク">
+                            </span>
+                        <span class="default">
+                        <img src=icon\navi-right.png alt="進むマーク">
+                        </span>
+                    </div>
+                </div>
+                <div class="new-info">
+                    <h1 class="info-title">社員寮完備の求人</h1>
+                    <div class="info-container">
+                        <div class="first-flex">
+                            <div class="salary">
+                                <span>月収</span> 
+                                <span class="salary-money">230,000</span>
+                                <span>円</span>
+                            </div>
+                            <div class="company">
+                                株式会社都工業
+                            </div>
+                        </div>
+                        <div class="second-flex">
+                            <div class="picture">
+                                <img src="icon\work-pic2.png" alt="サムネイル">
+                            </div>
+                            <div class="info-discription">
+                                カンタン作業でも高時給で収入アップ↑土日休でプライベート充実◎WiFi完備の格安寮にスグ住めちゃう！
+                            </div>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\spot.png" alt="勤務地アイコン" class="work-place-icon2">
+                            <span class="info-subtitle">勤務地</span>
+                            <span class="info-subtitle-detail">愛知県 岡崎市</span>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\work-type2.png" alt="職種アイコン">
+                            <span class="info-subtitle2">職種</span>
+                            <span class="info-subtitle-detail">金属加工</span>
+                        </div>
+                        <div class="recruit-tag2">
+                            <div class="tag-contents2">
+                                <span class="tag2">海外展開あり</span>
+                                <span class="tag2">年間休日が多い</span>
+                                <span class="tag2">入社特典あり</span>
+                                <span class="tag2">リモートワーク</span>
+                            </div>
+                            <div class="tag-contents2">
+                                <span class="tag2">副業可</span>
+                                <span class="tag2">自然豊か</span>
+                            </div>
+                            <div class="tag-empty"></div>
+                        </div>
+                    </div>
+                    <hr class="hr-solid2" color="#D6D7DC" size="1">
+                    <div class="info-container">
+                        <div class="first-flex">
+                            <div class="salary">
+                                <span>月収</span> 
+                                <span class="salary-money">230,000</span>
+                                <span>円</span>
+                            </div>
+                            <div class="company">
+                                株式会社都工業
+                            </div>
+                        </div>
+                        <div class="second-flex">
+                            <div class="picture">
+                                <img src="icon\work-pic2.png" alt="サムネイル">
+                            </div>
+                            <div class="info-discription">
+                                カンタン作業でも高時給で収入アップ↑土日休でプライベート充実◎WiFi完備の格安寮にスグ住めちゃう！
+                            </div>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\spot.png" alt="勤務地アイコン" class="work-place-icon2">
+                            <span class="info-subtitle">勤務地</span>
+                            <span class="info-subtitle-detail">愛知県 岡崎市</span>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\work-type2.png" alt="職種アイコン">
+                            <span class="info-subtitle2">職種</span>
+                            <span class="info-subtitle-detail">金属加工</span>
+                        </div>
+                        <div class="recruit-tag2">
+                            <div class="tag-contents2">
+                                <span class="tag2">海外展開あり</span>
+                                <span class="tag2">年間休日が多い</span>
+                                <span class="tag2">入社特典あり</span>
+                                <span class="tag2">リモートワーク</span>
+                            </div>
+                            <div class="tag-contents2">
+                                <span class="tag2">副業可</span>
+                                <span class="tag2">自然豊か</span>
+                            </div>
+                            <div class="tag-empty"></div>
+                        </div>
+                    </div>
+                    <hr class="hr-solid2" color="#D6D7DC" size="1">
+                    <div class="info-container">
+                        <div class="first-flex">
+                            <div class="salary">
+                                <span>月収</span> 
+                                <span class="salary-money">230,000</span>
+                                <span>円</span>
+                            </div>
+                            <div class="company">
+                                株式会社都工業
+                            </div>
+                        </div>
+                        <div class="second-flex">
+                            <div class="picture">
+                                <img src="icon\work-pic2.png" alt="サムネイル">
+                            </div>
+                            <div class="info-discription">
+                                カンタン作業でも高時給で収入アップ↑土日休でプライベート充実◎WiFi完備の格安寮にスグ住めちゃう！
+                            </div>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\spot.png" alt="勤務地アイコン" class="work-place-icon2">
+                            <span class="info-subtitle">勤務地</span>
+                            <span class="info-subtitle-detail">愛知県 岡崎市</span>
+                        </div>
+                        <div class="info-detail">
+                            <img src="icon\work-type2.png" alt="職種アイコン">
+                            <span class="info-subtitle2">職種</span>
+                            <span class="info-subtitle-detail">金属加工</span>
+                        </div>
+                        <div class="recruit-tag2">
+                            <div class="tag-contents2">
+                                <span class="tag2">海外展開あり</span>
+                                <span class="tag2">年間休日が多い</span>
+                                <span class="tag2">入社特典あり</span>
+                                <span class="tag2">リモートワーク</span>
+                            </div>
+                            <div class="tag-contents2">
+                                <span class="tag2">副業可</span>
+                                <span class="tag2">自然豊か</span>
+                            </div>
+                            <div class="tag-empty"></div>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <span class="more-detail">社員寮完備の求人をもっと見る</span>
+                        <span class="hover">
+                            <img src=icon\navi-right-white.png alt="進むマーク">
+                            </span>
+                        <span class="default">
+                        <img src=icon\navi-right.png alt="進むマーク">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="top-right-container">
+                <div class="resister-section">
+                    <div class="mini-logo">
+                        <img src=icon\miniX-mark.png alt="ミニXちゃんマーク">
+                    </div>
+                    <div class="register-container">
+                        <h1 class="register-title">無料の会員登録がおすすめ！</h1>
+                        <ul class="register-list">
+                            <li class="register-list-contents">
+                                ・ラクラク履歴書作成機能
+                            </li>
+                            <li class="register-list-contents">
+                                ・希望の会社からスカウトが届く！
+                            </li>
+                            <li class="register-list-contents">
+                                ・サイト内で選考フローが完結
+                            </li>
+                        </ul>
+                        <div class="register-button">
+                            <p>今すぐ無料会員登録をする</p>
+                            <img src=icon\image3.png alt="アイコン画像">
+                        </div>
+                    </div>
+                </div>
+                <div class="xcareer-container">
+                    <img src=icon\xcareer.png alt="Xキャリアロゴ">
+                    <img src=icon\agent.png alt="Xキャリアイメージ" class="xcareer-img">
+                    <h1>就活のお悩みご相談ください！</h1>
+                    <div class="xcareer-points">
+                        <span class="points-listmark">
+                            <img src="icon\check-list.png" alt="チェックマーク">
+                        </span>
+                        <span class="points-text">
+                            条件に合ったオススメの求人をご紹介
+                        </span>
+                    </div>
+                    <div class="xcareer-points">
+                        <span class="points-listmark">
+                            <img src="icon\check-list.png" alt="チェックマーク">
+                        </span>
+                            <span class="points-text">
+                                就活の進め方のアドバイスが欲しい
+                            </span>
+                    </div>
+                    <button class="xcareer-contact" type="button">
+                            <img src=icon\mail.png alt="相談アイコン">
+                            <span>
+                                エージェントへ相談する
+                            </span>
+                    </button>
+                </div>
+                    <div class="category-search">
+                        <h2 class="category-search-title">業種・職種から探す</h2>
+                        <ul class="search-work-type-list">
+                            <li class="work-type-detail">営業
+                                <span class="list-rightnavi">
+                                    <img src=icon\navi-right.png alt="進むマーク">
+                                </span>
+                            </li> 
+                            <li class="work-type-detail">建築・土木
+                                <span class="list-rightnavi">
+                                    <img src=icon\navi-right.png alt="進むマーク">
+                                </span>
+                            </li>
+                            <li class="work-type-detail">ITエンジニア
+                                <span class="list-rightnavi">
+                                    <img src=icon\navi-right.png alt="進むマーク">
+                                </span>
+                            </li>
+                            <li class="work-type-detail">医薬・食品化学・素材
+                                <span class="list-rightnavi">
+                                    <img src=icon\navi-right.png alt="進むマーク">
+                                </span>
+                            </li> 
+                            <li class="work-type-detail">クリエイティブ
+                                <span class="list-rightnavi">
+                                    <img src=icon\navi-right.png alt="進むマーク">
+                                </span>
+                            </li>
+                            <li class="work-type-detail">技能工・設備配送・農林水産 他
+                                <span class="list-rightnavi">
+                                    <img src=icon\navi-right.png alt="進むマーク">
+                                </span>
+                            </li>
+                            <li class="work-type-detail">管理・事務
+                                <span class="list-rightnavi">
+                                    <img src=icon\navi-right.png alt="進むマーク">
+                                </span>
+                            </li>
+                            <li class="work-type-detail">通訳
+                                <span class="list-rightnavi">
+                                    <img src=icon\navi-right.png alt="進むマーク">
+                                </span>
+                            </li>
+                        </ul>
+                        <h2 class="category-search-title">こだわり条件から探す</h2>
+                        <p class="focus-type-title">働く時間・休日</p> 
+                        <div class="focus-type-detail">
+                            <span class="tag-side">日勤のみ</span>
+                            <span class="tag-side">年間休日が多い</span>
+                            <span class="tag-side">土日休み</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">祝日休み</span>
+                            <span class="tag-side">有給休暇取得率が高い</span>
+                            <span class="tag-side">長期休暇あり</span>
+                        </div>
+                        <p class="focus-type-title">待遇</p>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">社員寮完備</span>
+                            <span class="tag-side">入社特典あり</span>
+                            <span class="tag-side">保養所完備</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">社会保険完備</span>
+                            <span class="tag-side">賞与あり</span>
+                            <span class="tag-side">退職金あり</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">食事支給・補助あり</span>
+                            <span class="tag-side">慶弔・災害見舞金あり</span>
+                        </div>
+                        <p class="focus-type-title">制度</p>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">定年後再雇用制度あり</span>
+                            <span class="tag-side">正社員登用制度あり</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">産休育休取得制度あり</span>
+                            <span class="tag-side">テレワーク制度あり</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">フレックスタイム制度あり</span>
+                            <span class="tag-side">表彰制度あり</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">インターバル制度あり</span>
+                            <span class="tag-side">資格・免許取得支援制度あり</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">ジョブローテーション制度あり</span>
+                            <span class="tag-side">異動希望制度あり</span>
+                        </div>
+                        <p class="focus-type-title">歓迎</p>
+                        <div>
+                            <span class="tag-side">多言語を生かせる</span>
+                            <span class="tag-side">経験者優遇</span>
+                            <span class="tag-side">未経験OK</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">資格者優遇</span>
+                            <span class="tag-side">中途採用者活躍</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">理系社員活躍</span>
+                            <span class="tag-side">文系社員活躍</span>
+                            <span class="tag-side">男性が多い</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">女性活躍</span>
+                            <span class="tag-side">高齢者歓迎</span>
+                            <span class="tag-side">障がい者歓迎</span>
+                        </div>
+                        <p class="focus-type-title">勤務条件</p>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">転勤なし</span>
+                            <span class="tag-side">副業可</span>
+                            <span class="tag-side">試用期間なし</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">交替勤務あり</span>
+                        </div>
+                        <p class="focus-type-title">環境・設備</p>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">社員食堂あり</span>
+                            <span class="tag-side">wifi完備</span>
+                            <span class="tag-side">売店あり</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">家賃・物価安い</span>
+                            <span class="tag-side">交通の便が良い</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">車・バイク・自転車通勤可能</span>
+                            <span class="tag-side">職場冷暖房完備</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">都市近郊</span>
+                            <span class="tag-side">自然豊か</span>
+                        </div>
+                        <p class="focus-type-title">社風・文化・特徴</p>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">クラブ活動充実</span>
+                            <span class="tag-side">新規事業展開あり</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">海外展開あり</span>
+                            <span class="tag-side">制服あり</span>
+                            <span class="tag-side">web面接対応可能</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">懇親会・慰安会あり</span>
+                            <span class="tag-side">外資系</span>
+                            <span class="tag-side">地元割合高い</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">大企業</span>
+                            <span class="tag-side">歴史があり、安定している企業</span>
+                        </div>
+                        <div class="focus-type-detail">
+                            <span class="tag-side">中堅・中小企業</span>
+                            <span class="tag-side">手当が充実</span>
+                            <span class="tag-side">受動喫煙対応</span>
+                        </div>
+                        <h2 class="category-search-title">エリア・都道府県から探す</h2>
+                        <p class="area-title">
+                            <span class="area-title2">北海道・東北エリアの求人一覧</span>
+                            <img src="icon\open-icon.png" alt="オープン" class="turn-up-before">
+                        </p>
+                        <ul class="area-close area-close-on">
+                            <li class="area-open">
+                                北海道
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                青森県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                岩手県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                宮城県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                秋田県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                山形県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                福島県
+                            </li>
+                        </ul>
+                        <p class="area-title">
+                            <span class="area-title2">関東エリアの求人一覧</span>
+                            <img src="icon\open-icon.png" alt="オープン" class="turn-up-before">
+                        </p>
+                        <ul class="area-close area-close-on">
+                            <li class="area-open">
+                                栃木県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                茨木県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                群馬県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                埼玉県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                千葉県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                東京都
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                神奈川県
+                            </li>
+                        </ul>
+                        <p class="area-title">
+                            <span class="area-title2">甲信越・北陸エリアの求人一覧</span>
+                            <img src="icon\open-icon.png" alt="オープン" class="turn-up-before">
+                        </p>
+                        <ul class="area-close area-close-on">
+                            <li class="area-open">
+                                新潟県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                長野県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                山梨県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                富山県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                石川県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                福井県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                神奈川県
+                            </li>
+                        </ul>
+                        <p class="area-title">
+                            <span class="area-title2">東海エリアの求人一覧</span>
+                            <img src="icon\open-icon.png" alt="オープン" class="turn-up-before">
+                        </p>
+                        <ul class="area-close area-close-on">
+                            <li class="area-open">
+                                静岡県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                愛知県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                岐阜県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                三重県
+                            </li>
+                        </ul>
+                        <p class="area-title">
+                            <span class="area-title2">関西エリアの求人一覧</span>
+                            <img src="icon\open-icon.png" alt="オープン" class="turn-up-before"> 
+                        </p>
+                        <ul class="area-close area-close-on">
+                            <li class="area-open">
+                                大阪府
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                京都府
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                兵庫県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                奈良県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                滋賀県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                和歌山県
+                            </li>
+                        </ul>
+                        <p class="area-title">
+                            <span class="area-title2">中国・四国エリアの求人一覧</span>
+                            <img src="icon\open-icon.png" alt="オープン" class="turn-up-before">
+                        </p>
+                        <ul class="area-close area-close-on">
+                            <li class="area-open">
+                                鳥取県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                島根県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                兵庫県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                岡山県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                広島県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                山口県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                香川県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                徳島県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                愛媛県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                高知県
+                            </li>
+                        </ul>
+                        <p class="area-title">
+                            <span class="area-title2">九州・沖縄エリアの求人一覧</span>
+                            <img src="icon\open-icon.png" alt="オープン" class="turn-up-before">
+                        </p>
+                        <ul class="area-close area-close-on">
+                            <li class="area-open">
+                                福岡県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                佐賀県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                長崎県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                熊本県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                大分県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                宮崎県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                鹿児島県
+                            </li>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <li class="area-open">
+                                沖縄県
+                            </li>
+                        </ul>
+                        <div class="qa-container">
+                            <h2 class="qa-title">Factor Xへのよくある質問</h2>
+                            <div class="question">
+                                <span class="q-mark">Q</span>
+                                <span class="question-title">Factor Xってなに？</span>
+                            </div>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    <span class="a-mark">A</span>
+                                    <span class="answer-contents">
+                                        Factor Xは基本的に掲載された求人から直接企業へ応募いただきますが、こちらの相談窓口から就活のご相談をすることができます。
+                                    </span>
+                                </div>
+                            </div>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <div class="question">
+                                <span class="q-mark">Q</span>
+                                <span class="question-title">転職エージェントはいるの？</span>
+                            </div>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    <span class="a-mark">A</span>
+                                    <span class="answer-contents">
+                                        Factor Xは基本的に掲載された求人から直接企業へ応募いただきますが、こちらの相談窓口から就活のご相談をすることができます。
+                                    </span>
+                                </div>
+                            </div>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <div class="question">
+                                <span class="q-mark">Q</span>
+                                <span class="question-title">他の求人サイトとの違いは？</span>
+                            </div>
+                            <div class="answer">
+                                <span class="a-mark">A</span>
+                                <span class="answer-contents">
+                                    工場・製造業の会社が運営しているため、工場・製造業に特化した求人を数多く取り扱っています。
+                                    ご自身のスキルや条件に合わせてピンポイントで求人案件を探すことができます。
+                                </span>
+                            </div>
+                            <hr class="hr-solid2" color="#D6D7DC" size="1">
+                            <div class="question">
+                                <span class="q-mark">Q</span>
+                                <span class="question-title">会員登録すると何ができるの？</span>
+                            </div>
+                            <div class="answer">
+                                <span class="a-mark">A</span>
+                                <span class="answer-contents">
+                                    無料で会員登録をすることにより企業が確認するための履歴書・職務経歴書を作成することができます。
+                                    履歴書・職務経歴書や希望条件を設定することで、ご自身から探すだけでなく、
+                                    企業からのスカウトを受け取ることもできるようになります。
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 勤務地モーダル -->
+    <section class="select-area">
+        <form action="php/search-select-output.php?v=1.0" method="post">
+            <div class="modal-background">
+                <div class="modal-container" id="area-modal-container">
+                    <div class="modal-close">
+                        <button type="button" class="modal-close-button">
+                            <span class="modal-close-text">閉じる</span>
+                            <img src="icon\close.png" alt="閉じるアイコン">
+                        </button>
+                    </div>
+                    <div class="modal-contents-container">
+                        <div class="menu-list-container">
+                            <ul class="area-menu-list">
+                                <li class="modal-menu-list-contents">北海道・東北
+                                    <span class="right-navi">
+                                        <img src=icon\navi-right.png alt="進むマーク">
+                                    </span>
+                                </li>
+                                <li class="modal-menu-list-contents">関東
+                                    <span class="right-navi">
+                                        <img src=icon\navi-right.png alt="進むマーク">
+                                    </span>
+                                </li>
+                                <li class="modal-menu-list-contents">甲信越・北陸
+                                    <span class="right-navi">
+                                        <img src=icon\navi-right.png alt="進むマーク">
+                                    </span>
+                                </li>
+                                <li class="modal-menu-list-contents">東海
+                                    <span class="right-navi">
+                                        <img src=icon\navi-right.png alt="進むマーク">
+                                    </span>
+                                </li>
+                                <li class="modal-menu-list-contents">関西
+                                    <span class="right-navi">
+                                        <img src=icon\navi-right.png alt="進むマーク">
+                                    </span>
+                                </li>
+                                <li class="modal-menu-list-contents">中国・四国
+                                    <span class="right-navi">
+                                        <img src=icon\navi-right.png alt="進むマーク">
+                                    </span>
+                                </li>
+                                <li class="modal-menu-list-contents">九州・沖縄
+                                    <span class="right-navi">
+                                        <img src=icon\navi-right.png alt="進むマーク">
+                                    </span>
+                                </li>
+                                <li class="modal-menu-list-contents">その他
+                                    <span class="right-navi">
+                                        <img src=icon\navi-right.png alt="進むマーク">
+                                    </span>
+                                </li>
+                                <li class="modal-list-empty"></li>
+                            </ul>
+                        </div>
+                        <div class="modal-main-container" id="first-visible">
+                            <div class="select-all-container">
+                                <div class="select-all">
+                                    <div class="checkbox-all-container">
+                                        <label for="modal-allcheck1" class="checkbox-label-all">
+                                            <input type="checkbox" name="selectallarea[]" value="全てを選択" class="checkbox-input-all" id="modal-allcheck1" data-select="1">
+                                                <span class="checkbox-text-all">全てを選択</span>
+                                        </label>
+                                        <div class="checkbox-list-container">
+                                            <div class="checkbox-list-contents">
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check1-1" class="checkbox-label-area" id="Hokkaido">
+                                                            <input type="checkbox" name="selectarea[]" value="北海道" class="checkbox-input-area" id="modal-check1-1">
+                                                                <span class="checkbox-text-area">北海道</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check1-2" class="checkbox-label-area" id="Aomori">
+                                                            <input type="checkbox" name="selectarea[]" value="青森県" class="checkbox-input-area" id="modal-check1-2">
+                                                                <span class="checkbox-text-area">青森県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check1-3" class="checkbox-label-area" id="Iwate">
+                                                            <input type="checkbox" name="selectarea[]" value="岩手県" class="checkbox-input-area" id="modal-check1-3">
+                                                                <span class="checkbox-text-area">岩手県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check1-4" class="checkbox-label-area" id="Miyagi">
+                                                            <input type="checkbox" name="selectarea[]" value="宮城県" class="checkbox-input-area" id="modal-check1-4">
+                                                            <span class="checkbox-text-area">宮城県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div Class="checkbox-list-contents">
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check1-5" class="checkbox-label-area" id="Akita">
+                                                            <input type="checkbox" name="selectarea[]" value="秋田県" class="checkbox-input-area" id="modal-check1-5">
+                                                                <span class="checkbox-text-area">秋田県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check1-6" class="checkbox-label-area" id="Yamagata">
+                                                            <input type="checkbox" name="selectarea[]" value="山形県" class="checkbox-input-area" id="modal-check1-6">
+                                                                <span class="checkbox-text-area">山形県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check1-7" class="checkbox-label-area" id="Fukushima">
+                                                            <input type="checkbox"  name="selectarea[]" value="福島県" class="checkbox-input-area" id="modal-check1-7">
+                                                                <span class="checkbox-text-area">福島県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-main-container">
+                            <div class="select-all-container">
+                                <div class="select-all">
+                                    <div class="checkbox-all-container">
+                                        <label for="modal-checkall2" class="checkbox-label-all">
+                                            <input type="checkbox" name="selectallarea[]" value="全てを選択" class="checkbox-input-all" id="modal-checkall2" data-select="1">
+                                                <span class="checkbox-text-all">全てを選択</span>
+                                        </label>
+                                        <div class="checkbox-list-container">
+                                            <div class="checkbox-list-contents">
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check2-1" class="checkbox-label-area" id="Tochigi">
+                                                            <input type="checkbox" name="selectarea[]" value="栃木県" class="checkbox-input-area" id="modal-check2-1">
+                                                            <span class="checkbox-text-area">栃木県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check2-2" class="checkbox-label-area" id="Ibaragi">
+                                                            <input type="checkbox" name="selectarea[]" value="茨木県" class="checkbox-input-area" id="modal-check2-2">
+                                                                <span class="checkbox-text-area">茨木県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                    <label for="modal-check2-3" class="checkbox-label-area" id="Gunma">
+                                                        <input type="checkbox" name="selectarea[]" value="群馬県" class="checkbox-input-area" id="modal-check2-3">
+                                                            <span class="checkbox-text-area">群馬県</span>
+                                                    </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check2-4" class="checkbox-label-area" id="Saitama">
+                                                            <input type="checkbox" name="selectarea[]" value="埼玉県" class="checkbox-input-area" id="modal-check2-4">
+                                                                <span class="checkbox-text-area">埼玉県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>    
+                                            </div>
+                                            <div Class="checkbox-list-contents">
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check2-5" class="checkbox-label-area" id="Chiba">
+                                                            <input type="checkbox" name="selectarea[]" value="千葉県" class="checkbox-input-area" id="modal-check2-5">
+                                                                <span class="checkbox-text-area">千葉県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check2-6" class="checkbox-label-area" id="Tokyo">
+                                                            <input type="checkbox" name="selectarea[]" value="東京都" class="checkbox-input-area" id="modal-check2-6">
+                                                                <span class="checkbox-text-area">東京都</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check2-7" class="checkbox-label-area" id="Kanagawa">
+                                                            <input type="checkbox" name="selectarea[]" value="神奈川県" class="checkbox-input-area" id="modal-check2-7">
+                                                                <span class="checkbox-text-area text3">神奈川県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="modal-main-container">
+                            <div class="select-all-container">
+                                <div class="select-all">
+                                    <div class="checkbox-all-container">
+                                        <label for="modal-checkall3" class="checkbox-label-all">
+                                            <input type="checkbox" name="selectallarea[]" value="全てを選択" class="checkbox-input-all" id="modal-checkall3" data-select="2">
+                                                <span class="checkbox-text-all">全てを選択</span>
+                                        </label>
+                                        <div class="checkbox-list-container">
+                                            <div class="checkbox-list-contents">
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check3-1" class="checkbox-label-area" id="Niigata">
+                                                            <input type="checkbox" name="selectarea[]" value="新潟県" class="checkbox-input-area" id="modal-check3-1">
+                                                            <span class="checkbox-text-area">新潟県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check3-2" class="checkbox-label-area" id="Nagano">
+                                                            <input type="checkbox" name="selectarea[]" value="長野県" class="checkbox-input-area" id="modal-check3-2">
+                                                                <span class="checkbox-text-area">長野県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check3-3" class="checkbox-label-area" id="Yamanashi">
+                                                            <input type="checkbox" name="selectarea[]" value="山梨県" class="checkbox-input-area" id="modal-check3-3">
+                                                                <span class="checkbox-text-area">山梨県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check3-4" class="checkbox-label-area" id="Toyama">
+                                                            <input type="checkbox" name="selectarea[]" value="富山県" class="checkbox-input-area" id="modal-check3-4">
+                                                                <span class="checkbox-text-area">富山県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>    
+                                            </div>
+                                            <div class="checkbox-list-contents">
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check3-5" class="checkbox-label-area" id="Ishikawa">
+                                                            <input type="checkbox" name="selectarea[]" value="石川県" class="checkbox-input-area" id="modal-check3-5">
+                                                                <span class="checkbox-text-area">石川県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check3-6" class="checkbox-label-area" id="Fukui">
+                                                            <input type="checkbox" name="selectarea[]" value="福井県" class="checkbox-input-area" id="modal-check3-6">
+                                                                <span class="checkbox-text-area">福井県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-main-container" id="md-open4">
+                            <div class="select-all-container">
+                                <div class="select-all">
+                                    <div class="checkbox-all-container">
+                                        <label for="modal-checkall4" class="checkbox-label-all" id="checkall4">
+                                            <input type="checkbox" name="selectallarea[]" value="全てを選択" id="modal-checkall4" class="checkbox-input-all" data-select="3">
+                                                <span class="checkbox-text-all">全てを選択</span>
+                                        </label>
+                                        <div class="checkbox-list-container">
+                                            <div class="checkbox-list-contents">
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check4-1" class="checkbox-label-area" id="Shizuoka">
+                                                            <input type="checkbox" name="selectarea[]" value="静岡県" class="checkbox-input-area" id="modal-check4-1">
+                                                                <span class="checkbox-text-area">静岡県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check4-2" class="checkbox-label-area" id="Aichi">
+                                                            <input type="checkbox" name="selectarea[]" value="愛知県" class="checkbox-input-area" id="modal-check4-2">
+                                                                <span class="checkbox-text-area">愛知県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check4-3" class="checkbox-label-area" id="Gifu">
+                                                            <input type="checkbox" name="selectarea[]" value="岐阜県" class="checkbox-input-area" id="modal-check4-3">
+                                                                <span class="checkbox-text-area">岐阜県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check4-4" class="checkbox-label-area" id="Mie">
+                                                            <input type="checkbox" name="selectarea[]" value="三重県" class="checkbox-input-area" id="modal-check4-4">
+                                                                <span class="checkbox-text-area">三重県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-main-container">
+                            <div class="select-all-container">
+                                <div class="select-all">
+                                    <div class="checkbox-all-container">
+                                        <label for="modal-checkall5" class="checkbox-label-all" id="checkall5">
+                                            <input type="checkbox" name="selectallarea[]" value="全てを選択" class="checkbox-input-all" id="modal-checkall5" data-select="4">
+                                                <span class="checkbox-text-all">全てを選択</span>
+                                        </label>
+                                        <div class="checkbox-list-container">
+                                            <div class="checkbox-list-contents">
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check5-1" class="checkbox-label-area" id="Osaka">
+                                                            <input type="checkbox" name="selectarea[]" value="大阪府" class="checkbox-input-area" id="modal-check5-1">
+                                                                <span class="checkbox-text-area">大阪府</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check5-2" class="checkbox-label-area" id="Kyoto">
+                                                            <input type="checkbox" name="selectarea[]" value="京都府" class="checkbox-input-area" id="modal-check5-2">
+                                                                <span class="checkbox-text-area">京都府</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check5-3" class="checkbox-label-area" id="Hyogo">
+                                                            <input type="checkbox" name="selectarea[]" value="兵庫県" class="checkbox-input-area" id="modal-check5-3">
+                                                                <span class="checkbox-text-area">兵庫県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check5-4" class="checkbox-label-area" id="Nara">
+                                                            <input type="checkbox"  name="selectarea[]" value="奈良県" class="checkbox-input-area" id="modal-check5-4">
+                                                                <span class="checkbox-text-area">奈良県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>    
+                                            </div>
+                                            <div Class="checkbox-list-contents">
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check5-5" class="checkbox-label-area" id="Shiga">
+                                                            <input type="checkbox"  name="selectarea[]" value="滋賀県" class="checkbox-input-area" id="modal-check5-5">
+                                                                <span class="checkbox-text-area">滋賀県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check5-6" class="checkbox-label-area" id="Wakayama">
+                                                            <input type="checkbox"  name="selectarea[]" value="和歌山県" class="checkbox-input-area" id="modal-check5-6">
+                                                                <span class="checkbox-text-area text3">和歌山県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-main-container">
+                            <div class="select-all-container">
+                                <div class="select-all">
+                                    <div class="checkbox-all-container">
+                                        <label for="modal-checkall6" class="checkbox-label-all" id="checkall6">
+                                            <input type="checkbox"  name="selectallarea[]" value="全てを選択" class="checkbox-input-all" id="modal-checkall6" data-select="5">
+                                                <span class="checkbox-text-all">全てを選択</span>
+                                        </label>
+                                        <div class="checkbox-list-container">
+                                            <div class="checkbox-list-contents">
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check6-1" class="checkbox-label-area" id="Tottri">
+                                                            <input type="checkbox" name="selectarea[]" value="鳥取県" class="checkbox-input-area" id="modal-check6-1">
+                                                                <span class="checkbox-text-area">鳥取県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check6-2" class="checkbox-label-area" id="Shimane">
+                                                            <input type="checkbox" name="selectarea[]" value="島根県" class="checkbox-input-area" id="modal-check6-2">
+                                                                <span class="checkbox-text-area">島根県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check6-3" class="checkbox-label-area" id="Okayama">
+                                                            <input type="checkbox" name="selectarea[]" value="岡山県" class="checkbox-input-area" id="modal-check6-3">
+                                                                <span class="checkbox-text-area">岡山県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check6-4" class="checkbox-label-area" id="Hiroshima">
+                                                            <input type="checkbox" name="selectarea[]" value="広島県" class="checkbox-input-area" id="modal-check6-4">
+                                                                <span class="checkbox-text-area">広島県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>    
+                                            </div>
+                                            <div Class="checkbox-list-contents">
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check6-5" class="checkbox-label-area" id="Yamaguchi">
+                                                            <input type="checkbox" name="selectarea[]" value="山口県" class="checkbox-input-area" id="modal-check6-5">
+                                                                <span class="checkbox-text-area">山口県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check6-6" class="checkbox-label-area" id="Kagawa">
+                                                            <input type="checkbox" name="selectarea[]" value="香川県" class="checkbox-input-area" id="modal-check6-6">
+                                                                <span class="checkbox-text-area">香川県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check6-7" class="checkbox-label-area" id="Tokushima">
+                                                            <input type="checkbox" name="selectarea[]" value="徳島県" class="checkbox-input-area" id="modal-check6-7">
+                                                                <span class="checkbox-text-area">徳島県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check6-8" class="checkbox-label-area" id="Ehime">
+                                                            <input type="checkbox" name="selectarea[]" value="愛媛県" class="checkbox-input-area" id="modal-check6-8">
+                                                                <span class="checkbox-text-area">愛媛県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div Class="checkbox-list-contents">
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check6-9" class="checkbox-label-area" id="Kouchi">
+                                                            <input type="checkbox" name="selectarea[]" value="高知県" class="checkbox-input-area" id="modal-check6-9">
+                                                                <span class="checkbox-text-area">高知県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-main-container" id="md-open7">
+                            <div class="select-all-container">
+                                <div class="select-all">
+                                    <div class="checkbox-all-container">
+                                        <label for="modal-checkall7" class="checkbox-label-all">
+                                            <input type="checkbox"  name="selectallarea[]" value="全てを選択" class="checkbox-input-all" id="modal-checkall7" data-select="6">
+                                                <span class="checkbox-text-all">全てを選択</span>
+                                        </label>
+                                        <div class="checkbox-list-container">
+                                            <div class="checkbox-list-contents">
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check7-1" class="checkbox-label-area" id="Fukuoka">
+                                                            <input type="checkbox" name="selectarea[]" value="福岡県" class="checkbox-input-area" id="modal-check7-1">
+                                                                <span class="checkbox-text-area">福岡県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check7-2" class="checkbox-label-area" id="Saga">
+                                                            <input type="checkbox" name="selectarea[]" value="佐賀県" class="checkbox-input-area" id="modal-check7-2">
+                                                                <span class="checkbox-text-area">佐賀県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check7-3" class="checkbox-label-area" id="Nagasaki">
+                                                            <input type="checkbox" name="selectarea[]" value="長崎県" class="checkbox-input-area" id="modal-check7-3">
+                                                                <span class="checkbox-text-area">長崎県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check7-4" class="checkbox-label-area" id="Kumamoto">
+                                                            <input type="checkbox" name="selectarea[]" value="熊本県" class="checkbox-input-area" id="modal-check7-4">
+                                                                <span class="checkbox-text-area">熊本県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>    
+                                            </div>
+                                            <div Class="checkbox-list-contents">
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check7-5" class="checkbox-label-area" id="Ooita">
+                                                            <input type="checkbox" name="selectarea[]" value="大分県" class="checkbox-input-area" id="modal-check7-5">
+                                                                <span class="checkbox-text-area">大分県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check7-6" class="checkbox-label-area" id="Miyazaki">
+                                                            <input type="checkbox" name="selectarea[]" value="宮崎県" class="checkbox-input-area" id="modal-check7-6">
+                                                                <span class="checkbox-text-area">宮崎県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check7-7" class="checkbox-label-area" id="Kagoshima">
+                                                            <input type="checkbox" name="selectarea[]" value="鹿児島県" class="checkbox-input-area" id="modal-check7-7">
+                                                                <span class="checkbox-text-area text3">鹿児島県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check7-8" class="checkbox-label-area" id="Okinawa">
+                                                            <input type="checkbox" name="selectarea[]" value="沖縄県" class="checkbox-input-area" id="modal-check7-8">
+                                                                <span class="checkbox-text-area">沖縄県</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-main-container" id="md-open8">
+                            <div class="select-all-container">
+                                <div class="select-all">
+                                    <div class="checkbox-all-container">
+                                        <label for="modal-checkall8" class="checkbox-label-all">
+                                            <input type="checkbox"  name="selectallarea[]" value="全てを選択" class="checkbox-input-all" id="modal-checkall8" data-select="7">
+                                                <span class="checkbox-text-all">全てを選択</span>
+                                        </label>
+                                        <div class="checkbox-list-container">
+                                            <div class="checkbox-list-contents">
+                                                <div class="checkbox-list-area">
+                                                    <span class="checked-border-area">
+                                                        <label for="modal-check8-1" class="checkbox-label-area" id="Kaigai">
+                                                            <input type="checkbox" name="selectarea[]" value="海外" class="checkbox-input-area" id="modal-check8-1">
+                                                                <span class="checkbox-text-area">海外</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-decision-container">
+                        <button type="button" class="modal-reset-button" id="reset-area">
+                            <span class="modal-reset-button-text">選択解除</span>
+                        </button>
+                        <button type="button" class="search-button" id="submit-area">
+                            <img src="icon\docu-check.png" alt="選択アイコン">
+                            <span id="search-button-text">チェックした条件を反映</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!-- こだわり条件モーダル -->
+    <section class="select-focus">
+        <form action="php/search-select-output.php?v=1.0" method="post">
+            <div class="modal-background" id="focus-modal-background">
+                <div class="focus-modal-container" id="focus-modal-container">
+                    <div class="modal-close">
+                        <button type="button" class="modal-close-button" id="focus-modal-close">
+                            <span class="modal-close-text">閉じる</span>
+                            <img src="icon\close.png" alt="閉じるアイコン">
+                        </button>
+                    </div>
+                    <div class="focus-modal" id="focus-modal-section">
+                        <!-- DOM生成 -->
+                        <div class="modal-decision-container" id="focus-decision">
+                            <button type="button" class="modal-reset-button" id="reset-focus">
+                                <span class="modal-reset-button-text">選択解除</span>
+                            </button>
+                            <button type="button" class="search-button" id="submit-focus">
+                                <img src="icon\docu-check.png" alt="選択アイコン">
+                                <span id="search-button-text">チェックした条件を反映</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slide menu -->
+    <section class="slide-menu">
+        <div class="close-container">
+            <button type="button" class="close-button">
+                <span class="close-navi">＜</span>
+                <span class="close-text">閉じる</span>
+            </button>
+        </div>
+        <div class="menu-container">
+            <ul class="menu-list">
+                <li class="menu-list-contents">会員登録
+                    <span class="right-na表彰制度表彰制度
+                        <img src=icon\navi-right.png alt="進むマーク">
+                    </span>
+                </li>
+                <li class="menu-list-contents">ログイン
+                    <span class="right-navi">
+                        <img src=icon\navi-right.png alt="進むマーク">
+                    </span>
+                </li>
+                <li class="menu-list-contents">求人検索TOP
+                    <span class="right-navi">
+                        <img src=icon\navi-right.png alt="進むマーク">
+                    </span>
+                </li>
+                <li class="menu-list-contents">閲覧履歴
+                    <span class="right-navi">
+                        <img src=icon\navi-right.png alt="進むマーク">
+                    </span>
+                </li>
+                <li class="menu-list-contents">お気に入り
+                    <span class="right-navi">
+                        <img src=icon\navi-right.png alt="進むマーク">
+                    </span>
+                </li>
+                <li class="menu-list-contents">よくある質問
+                    <span class="right-navi">
+                        <img src=icon\navi-right.png alt="進むマーク">
+                    </span>
+                </li>
+                <li class="menu-list-contents">お問い合わせ
+                    <span class="right-navi">
+                        <img src=icon\navi-right.png alt="進むマーク">
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="resister-section">
+            <div class="mini-logo">
+                <img src=icon\miniX-mark.png alt="ミニXちゃんマーク">
+            </div>
+            <div class="register-container">
+                <h1 class="register-title">無料の会員登録がおすすめ！</h1>
+                <ul class="register-list">
+                    <li class="register-list-contents">
+                        ・ラクラク履歴書作成機能
+                    </li>
+                    <li class="register-list-contents">
+                        ・希望の会社からスカウトが届く！
+                    </li>
+                    <li class="register-list-contents">
+                        ・サイト内で選考フローが完結
+                    </li>
+                </ul>
+                <div class="register-button">
+                    <p>今すぐ無料会員登録をする</p>
+                    <img src=icon\image3.png alt="アイコン画像">
+                </div>
+            </div>
+        </div>
+        <div class="xcareer-container">
+            <img src=icon\xcareer.png alt="Xキャリアロゴ">
+            <img src=icon\agent.png alt="Xキャリアイメージ" class="xcareer-img">
+            <h1>就活のお悩みご相談ください！</h1>
+            <div class="xcareer-points">
+                <span class="points-listmark">
+                    <img src="icon\check-list.png" alt="チェックマーク">
+                </span>
+                <span class="points-text">
+                    条件に合ったオススメの求人をご紹介
+                </span>
+            </div>
+            <div class="xcareer-points">
+                <span class="points-listmark">
+                    <img src="icon\check-list.png" alt="チェックマーク">
+                </span>
+                    <span class="points-text">
+                        就活の進め方のアドバイスが欲しい
+                    </span>
+            </div>
+            <button class="xcareer-contact" type="button">
+                    <img src=icon\mail.png alt="相談アイコン">
+                    <span>
+                        エージェントへ相談する
+                    </span>
+            </button>
+        </div>
+    </section>
+    <!-- Swiperの読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JavaScriptの読み込み -->
+    <script src="js/job-top.js?v=1.0"></script>
+</body>
